@@ -1,0 +1,23 @@
+{
+  "development": {
+      "username": "postgres",
+      "password": "postgres",
+      "database": "cloudoki_dev",
+      "host": "localhost"",
+      "dialect": "postgres"
+    },
+  "test": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "cloudoki_tst",
+    "dialect": "postgres",
+    "host": "localhost"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "cloudoki_prd",
+    "dialect": "postgres",
+    "host": "localhost"
+  }
+}
