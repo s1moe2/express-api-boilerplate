@@ -4,7 +4,9 @@ const router = express.Router();
 const libraries = requireRoot('/libraries');
 const HttpStatus = require('http-status-codes');
 
-const CompanyController = requireRoot('/core/controllers/companies')();
+const Company = requireRoot('/core/domain-model').Company;
+
+const CompanyController = requireRoot('/core/controllers/companies')(Company);
 
 router.param('id', libraries.middleware.paramsValidators.validateId);
 

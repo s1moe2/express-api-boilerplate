@@ -1,19 +1,18 @@
 const requireRoot = require('app-root-path').require;
-const orm = requireRoot('/core/domain-model');;
 const Op = require('sequelize').Op;
 const errors = require('throw.js');
 
 
-module.exports = () => {
+module.exports = (Company) => {
 
   async function getAll() {
-    return await orm.Company.findAll({
+    return await Company.findAll({
       attributes: ['id', 'companyName']
     });
   }
 
   async function getByID(companyID) {
-    const company = await orm.Company.findById(companyID);
+    const company = await Company.findById(companyID);
     if (!company) {
       return new errors.NotFound();
     }
@@ -21,7 +20,7 @@ module.exports = () => {
   }
 
   async function getByName(name) {
-    return await orm.Company.find({
+    return await Company.find({
       where: {
         companyName: {
           [Op.eq]: name
@@ -36,7 +35,7 @@ module.exports = () => {
       throw new errors.Conflict();
     }
 
-    company = await orm.Company.create({
+    company = await Company.create({
       companyName: name
     });
     if (!company) {
