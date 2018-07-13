@@ -6,7 +6,7 @@
     "pretest": "NODE_ENV=test sequelize db:migrate",
     "test": "mocha -r chai/register-should --recursive",
     "start": "nodemon ./bin/www",
-    "coverage": "nyc mocha ./test/spec.js -r chai/register-should",
+    "coverage": "nyc mocha ./test/end-to-end.js -r chai/register-should",
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "repository": {
