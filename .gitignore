@@ -1,5 +1,5 @@
 # configs
-config/*.json
+# config/*.json
 
 # idea
 .idea/*

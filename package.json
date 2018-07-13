@@ -7,7 +7,7 @@
     "test": "mocha ./test/spec.js -r chai/register-should",
     "prestart": "sequelize db:migrate",
     "start": "nodemon ./bin/www",
-    "coverage": "nyc nyc --reporter=html --reporter=text --reporter=html mocha ./test/spec.js -r chai/register-should",
+    "coverage": "nyc mocha ./test/spec.js -r chai/register-should",
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "repository": {
