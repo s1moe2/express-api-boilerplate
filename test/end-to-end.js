@@ -9,8 +9,28 @@ const expect = chai.expect;
 
 chai.use(chaiHttp);
 
+describe('Generic tests', () => {
+  it('should return 404', (done) => {
+    chai.request(app)
+      .get('/doesntexist')
+      .end((err, res) => {
+        expect(res.status).to.equal(404);
+        done();
+      });
+  });
 
-describe('Developer hiring tests', () => {
+  it('should return 400', (done) => {
+    chai.request(app)
+      .get('/companies/doesntexist')
+      .end((err, res) => {
+        expect(res.status).to.equal(404);
+        done();
+      });
+  });
+});
+
+
+describe('Companies endpoint tests', () => {
 
   before(function(done) {
     orm.sequelize.sync({ force: true }).then(() => { done() });
