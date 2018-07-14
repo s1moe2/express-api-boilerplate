@@ -30,18 +30,18 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
 
-    instanceMethods: {
-      toJSON: () => {
+    /*instanceMethods: {
+      toSimpleJSON: () => {
         return {
           id: this.id,
           name: this.companyName
         }
       }
-    }
+    }*/
   });
 
   Company.associate = (models) => {
-    Company.hasMany(models.Developer, {
+    Company.hasMany(models.Employee, {
       foreignKey: 'companyID'
     });
   };

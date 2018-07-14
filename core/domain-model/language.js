@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  const Language = sequelize.define('Language', {
+  const Skill = sequelize.define('Skill', {
     id: {
       type: DataTypes.BIGINT,
       allowNull: false,
@@ -12,12 +12,12 @@ module.exports = (sequelize, DataTypes) => {
     }
   });
 
-  Language.associate = (models) => {
-    Language.belongsToMany(models.Developer, {
-      through: models.DeveloperLanguage,
-      foreignKey:'languageID'
+  Skill.associate = (models) => {
+    Skill.belongsToMany(models.Employee, {
+      through: models.EmployeeSkill,
+      foreignKey:'skillID'
     });
   };
 
-  return Language;
+  return Skill;
 };

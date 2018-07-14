@@ -27,6 +27,8 @@ router.get('/:id', async (req, res, next) => {
 
   if(company) {
     res.status(HttpStatus.OK).json(company);
+  } else {
+    res.status(HttpStatus.NOT_FOUND);
   }
 });
 

@@ -6,7 +6,6 @@ const cors = require('cors');
 const libraries = requireRoot('/libraries');
 
 router.use(bodyParser.json());
-router.use(libraries.middleware.responseHelpers);
 
 router.use(cors({credentials: true, origin: true}));
 router.options('*', cors());

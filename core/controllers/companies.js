@@ -5,30 +5,35 @@ const errors = require('throw.js');
 
 module.exports = (Company) => {
 
+  // public
   async function getAll() {
     return await Company.findAll({
       attributes: ['id', 'companyName']
     });
   }
 
+  // public
   async function getByID(companyID) {
     const company = await Company.findById(companyID);
     if (!company) {
-      return new errors.NotFound();
+      throw new errors.NotFound();
     }
     return company;
   }
 
   async function getByName(name) {
-    return await Company.find({
+    const company = await Company.find({
       where: {
         companyName: {
           [Op.eq]: name
         }
       }
     });
+
+    return company;
   }
 
+  // public
   async function create(name) {
     let company = await getByName(name);
     if(company) {
@@ -39,7 +44,7 @@ module.exports = (Company) => {
       companyName: name
     });
     if (!company) {
-      return new errors.InternalServerError();
+      throw new errors.InternalServerError();
     }
 
     return company;
@@ -48,7 +53,6 @@ module.exports = (Company) => {
   return {
     getAll,
     getByID,
-    getByName,
     create
   };
 };

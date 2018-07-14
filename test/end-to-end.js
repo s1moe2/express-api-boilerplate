@@ -65,4 +65,23 @@ describe('Companies endpoint tests', () => {
         done();
       });
   });
+
+  it('should not find a company', (done) => {
+    chai.request(app)
+      .get('/v1/companies/123')
+      .end((err, res) => {
+        expect(res.status).to.equal(404);
+        done();
+      });
+  });
+
+  it('should not create another company with the same name', (done) => {
+    chai.request(app)
+      .post('/v1/companies')
+      .send({ "name": "Multiverse Coders" })
+      .end((err, res) => {
+        expect(res.status).to.equal(409);
+        done();
+      });
+  });
 });

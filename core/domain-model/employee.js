@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  const Developer = sequelize.define('Developer', {
+  const Employee = sequelize.define('Employee', {
     id: {
       type: DataTypes.BIGINT,
       allowNull: false,
@@ -16,16 +16,16 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
-  Developer.associate = (models) => {
-    Developer.belongsTo(models.Company, {
+  Employee.associate = (models) => {
+    Employee.belongsTo(models.Company, {
       foreignKey: 'companyID',
     });
 
-    Developer.belongsToMany(models.Language, {
-      through: models.DeveloperLanguage,
-      foreignKey:'developerID'
+    Employee.belongsToMany(models.Skill, {
+      through: models.EmployeeSkill,
+      foreignKey:'dmployeeID'
     });
   };
 
-  return Developer;
+  return Employee;
 };

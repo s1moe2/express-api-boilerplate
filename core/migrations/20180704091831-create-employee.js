@@ -1,21 +1,21 @@
 module.exports = {
   up: (queryInterface, DataTypes) =>
-    queryInterface.createTable('DevelopersLanguages', {
-      developerID: {
+    queryInterface.createTable('Employees', {
+      id: {
         type: DataTypes.BIGINT,
-        primaryKey: true,
-        references: {
-          model: 'Developers',
-          key: 'id'
-        },
-        onUpdate: 'CASCADE',
-        onDelete: 'RESTRICT'
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true
       },
-      languageID: {
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      companyID: {
         type: DataTypes.BIGINT,
-        primaryKey: true,
+        allowNull: false,
         references: {
-          model: 'Developers',
+          model: 'Companies',
           key: 'id'
         },
         onUpdate: 'CASCADE',
@@ -35,5 +35,5 @@ module.exports = {
       }
     }),
   down: (queryInterface) =>
-    queryInterface.dropTable('DevelopersLanguages'),
+    queryInterface.dropTable('Employees'),
 };

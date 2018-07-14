@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "dev": "NODE_ENV=development sequelize db:migrate && nodemon ./bin/www",
     "pretest": "NODE_ENV=test sequelize db:migrate",
     "test": "NODE_ENV=test mocha -r chai/register-should --recursive --exit",
     "start": "nodemon ./bin/www",
-    "coverage": "nyc mocha ./test/end-to-end.js -r chai/register-should --exit",
+    "coverage": "NODE_ENV=test nyc --reporter=html mocha ./test/end-to-end.js -r chai/register-should --exit",
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "repository": {
