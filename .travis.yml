@@ -6,5 +6,7 @@ services:
 before_script:
   - cp config/connection.json.travis config/connection.json
   - psql -c 'create database api_test;' -U postgres
-script: npm run coverage
-after_success: 'npm run coveralls'
+script:
+  - npm run coverage-rep
+  - codecov
+#after_success: 'npm run coveralls'

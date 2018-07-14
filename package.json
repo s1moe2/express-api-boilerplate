@@ -8,7 +8,8 @@
     "test": "NODE_ENV=test mocha -r chai/register-should --recursive --exit",
     "start": "node ./bin/www",
     "coverage": "NODE_ENV=test nyc --reporter=html mocha ./test/end-to-end.js -r chai/register-should --exit",
-    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
+    "coverage-rep": "NODE_ENV=test nyc --reporter=text-lcov > coverage.lcov mocha ./test/end-to-end.js -r chai/register-should --exit && codecov"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
   "devDependencies": {
     "chai": "4.1.2",
     "chai-http": "4.0.0",
+    "codecov": "^3.0.4",
     "coveralls": "^3.0.2",
     "mocha": "5.2.0",
     "nodemon": "1.17.5",
