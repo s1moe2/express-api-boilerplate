@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/s1moe2/express-api-boilerplate.svg?branch=master)](https://travis-ci.org/s1moe2/express-api-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/s1moe2/express-api-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/s1moe2/express-api-boilerplate?branch=master)
+[![codecov](https://codecov.io/gh/s1moe2/express-api-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/s1moe2/express-api-boilerplate)
 [![Known Vulnerabilities](https://snyk.io/test/github/s1moe2/express-api-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/s1moe2/express-api-boilerplate?targetFile=package.json)
 
 
@@ -30,7 +30,8 @@ There's a configuration file for the integration with Travis if you want to use 
 
 Note that it's using a PostgreSQL (in Travis) to run the tests. If you want to use any other make sure you change the file.
 
-Additionally, there's also an integration with Coveralls. If you want to use it, you'll need to enter your Coveralls token in `.coveralls.yml` (again, copy-pase the existing sample).
+Coveralls was not updating the status after each build. Moved to `codecov.io` which doesn't need additional setup.
+~~Additionally, there's an integration with Coveralls. If you want to use it, you'll need to enter your Coveralls token in `.coveralls.yml` (again, copy-pase the existing sample).~~
 
 
 ### Notes
