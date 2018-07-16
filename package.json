@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV=development sequelize db:migrate && nodemon ./bin/www",
+    "dev": "NODE_ENV=development sequelize db:migrate && DEBUG=app:servers nodemon ./src/bin/server.js",
     "pretest": "NODE_ENV=test sequelize db:migrate",
     "test": "NODE_ENV=test mocha -r chai/register-should --recursive --exit",
-    "start": "node ./bin/www",
+    "start": "node ./src/bin/server.js",
     "coverage": "NODE_ENV=test nyc --reporter=html mocha ./test/end-to-end.js -r chai/register-should --exit",
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
     "coverage-rep": "NODE_ENV=test nyc --reporter=text-lcov > coverage.lcov mocha ./test/end-to-end.js -r chai/register-should --exit && codecov"
@@ -17,9 +17,11 @@
   },
   "dependencies": {
     "app-root-path": "2.1.0",
+    "compression": "1.7.3",
     "cors": "2.8.4",
     "debug": "2.6.9",
     "express": "4.16.0",
+    "express-validator": "5.2.0",
     "helmet": "3.12.1",
     "http-errors": "1.6.2",
     "http-status-codes": "1.3.0",

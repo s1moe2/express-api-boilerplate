@@ -6,6 +6,6 @@ router.get('/', (req, res, next) => {
   res.json({});
 });
 
-router.use('/v1', requireRoot('/routes/api'));
+router.use('/v1', requireRoot('/src/routes/api'));
 
 module.exports = router;

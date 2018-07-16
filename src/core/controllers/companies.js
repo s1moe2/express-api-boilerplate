@@ -1,4 +1,3 @@
-const requireRoot = require('app-root-path').require;
 const Op = require('sequelize').Op;
 const errors = require('throw.js');
 

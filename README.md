@@ -3,7 +3,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/s1moe2/express-api-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/s1moe2/express-api-boilerplate?targetFile=package.json)
 
 
-# Simple Node.js+Express+Sequelize API server boilerplate
+# Simple Node.js+Express+Sequelize API server.js boilerplate
 
 ### Getting Started
 Before anything else you need to create a database and update the configuration file in `/config/connection.json` (you can copy-paste `connection.json.sample` and edit as needed).

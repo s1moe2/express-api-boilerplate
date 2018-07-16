@@ -2,9 +2,12 @@ const createError = require('http-errors');
 const express = require('express');
 const logger = require('morgan');
 const helmet = require('helmet');
+const compression = require('compression');
+const expressValidator = require('express-validator');
 const routes = require('./routes');
 const app = express();
 
+app.use(compression());
 app.use(helmet());
 app.use(logger('dev'));
 app.use(express.json());
@@ -23,7 +26,6 @@ app.use((err, req, res, next) => {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
   res.status(err.status || 500);
   res.json('error');
 });
