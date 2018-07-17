@@ -14,11 +14,19 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.BIGINT,
       allowNull: false
     },
+    userID: {
+      type: DataTypes.BIGINT,
+      allowNull: true
+    }
   });
 
   Employee.associate = (models) => {
     Employee.belongsTo(models.Company, {
       foreignKey: 'companyID',
+    });
+
+    Employee.belongsTo(models.User, {
+      foreignKey: 'userID',
     });
 
     Employee.belongsToMany(models.Skill, {

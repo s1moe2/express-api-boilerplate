@@ -21,6 +21,16 @@ module.exports = {
         onUpdate: 'CASCADE',
         onDelete: 'RESTRICT'
       },
+      userID: {
+        type: DataTypes.BIGINT,
+        allowNull: false,
+        references: {
+          model: 'Users',
+          key: 'id'
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'RESTRICT'
+      },
       createdAt: {
         allowNull: false,
         type: DataTypes.DATE,

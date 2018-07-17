@@ -3,6 +3,8 @@ const express = require('express');
 const logger = require('morgan');
 const helmet = require('helmet');
 const compression = require('compression');
+const cors = require('cors');
+const passport = require('passport');
 const expressValidator = require('express-validator');
 const routes = require('./routes');
 const app = express();
@@ -12,6 +14,9 @@ app.use(helmet());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.use(passport.initialize());
+app.use(cors());
 
 app.use('/', routes);
 
@@ -31,3 +36,9 @@ app.use((err, req, res, next) => {
 });
 
 module.exports = app;
+
+
+// "Handle" all the uncaught promise rejections
+process.on('unhandledRejection', error => {
+  console.error('Uncaught Error', error);
+});
