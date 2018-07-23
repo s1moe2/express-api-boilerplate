@@ -1,5 +1,6 @@
-const companies = require('./companies');
+const orm = require('../domain-model');
 
 module.exports = {
-  companies
+  CompanyController: require('./companies')(orm),
+  UserController: require('./users')(orm)
 };

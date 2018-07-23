@@ -15,6 +15,7 @@ router.use('//', function(req, res){
 });
 
 router.use('/companies', require('./companies'));
+router.use('/users', require('./users'));
 
 router.use('*', function(req, res){
   res.apiError(new HttpErrors.NotFound());
@@ -30,6 +31,9 @@ router.use((err, req, res, next) => {
 
     case Exceptions.RecordCreationException:
       return res.apiError(new HttpErrors.InternalServerError());
+
+    case Exceptions.AuthenticationException:
+      return res.apiError(new HttpErrors.Unauthorized());
 
     default:
       res.apiError(new HttpErrors.InternalServerError());

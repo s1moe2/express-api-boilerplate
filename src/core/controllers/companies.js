@@ -2,18 +2,18 @@ const Op = require('sequelize').Op;
 const Exceptions = require('../../util/exceptions');
 
 
-module.exports = (Company) => {
+module.exports = (orm) => {
 
   // public
   async function getAll() {
-    return await Company.findAll({
+    return await orm.Company.findAll({
       attributes: ['id', 'companyName']
     });
   }
 
   // public
   async function getByID(companyID) {
-    const company = await Company.findById(companyID);
+    const company = await orm.Company.findById(companyID);
     if (!company) {
       throw new Exceptions.RecordNotFoundException();
     }
@@ -21,7 +21,7 @@ module.exports = (Company) => {
   }
 
   async function getByName(name) {
-    const company = await Company.find({
+    const company = await orm.Company.find({
       where: {
         companyName: {
           [Op.eq]: name
@@ -39,7 +39,7 @@ module.exports = (Company) => {
       throw new Exceptions.RecordAlreadyExistsException();
     }
 
-    company = await Company.create({
+    company = await orm.Company.create({
       companyName: name
     });
     if (!company) {

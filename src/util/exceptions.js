@@ -33,9 +33,17 @@ class RecordCreationException extends AppException {
   }
 }
 
+class AuthenticationException extends AppException {
+  constructor (message) {
+    // Providing default message and overriding status code.
+    super(message || 'Authentication Exception');
+  }
+}
+
 module.exports = {
   AppException,
   RecordAlreadyExistsException,
   RecordNotFoundException,
-  RecordCreationException
+  RecordCreationException,
+  AuthenticationException
 };

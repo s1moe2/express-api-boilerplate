@@ -9,16 +9,21 @@ const expressValidator = require('express-validator');
 const routes = require('./routes');
 const app = express();
 
+// middleware jungle
 app.use(compression());
 app.use(helmet());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
-
 app.use(require('./middleware/response'));
-app.use(passport.initialize());
 
+// passport middleware
+const userController = require('./core/controllers').UserController; // TODO move this "injection" to a middlewares/index.js ??
+const passportMiddleware = require('./middleware/passport')(userController);
+app.use(passportMiddleware.init());
+
+// routes
 app.use('/', routes);
 
 // catch 404 and forward to error handler
@@ -33,7 +38,7 @@ app.use((err, req, res, next) => {
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
   res.status(err.status || 500);
-  res.json('error');
+  res.json(err.message);
 });
 
 module.exports = app;
