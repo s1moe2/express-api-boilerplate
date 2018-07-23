@@ -1,4 +1,4 @@
-const createError = require('http-errors');
+const HttpErrors = require('http-errors');
 const express = require('express');
 const logger = require('morgan');
 const helmet = require('helmet');
@@ -14,15 +14,16 @@ app.use(helmet());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-app.use(passport.initialize());
 app.use(cors());
+
+app.use(require('./middleware/response'));
+app.use(passport.initialize());
 
 app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
-  next(createError(404));
+  res.apiError(new HttpErrors.NotFound());
 });
 
 // error handler

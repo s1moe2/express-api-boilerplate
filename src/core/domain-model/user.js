@@ -1,7 +1,7 @@
 const bcrypt = require('bcrypt');
 const bcrypt_p = require('bcrypt-promise');
 const jwt = require('jsonwebtoken');
-const to = require('await-parse-error');
+const { to } = require('await-to-js');
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
@@ -27,21 +27,12 @@ module.exports = (sequelize, DataTypes) => {
     password: {
       type: DataTypes.STRING,
       allowNull: false
-    },
-    passwordSalt: {
-      type: DataTypes.STRING,
-      allowNull: false
     }
   });
 
-  // Associations
-  User.associate = (models) => {
-    User.belongsTo(models.Employee, {
-      foreignKey:'userID'
-    });
-  };
+  // ====================== Associations
 
-  // Hooks
+  // ====================== Hooks
   User.beforeSave(async (user, options) => {
     let err;
     if (user.changed('password')) {
@@ -51,7 +42,7 @@ module.exports = (sequelize, DataTypes) => {
         throw new Error(err.message);
       }
 
-      [err, hash] = await to(bcrypt.hash(user.password, salt));
+      [err, hash] = await to(bcrypt_p.hash(user.password, salt));
       if(err) {
         throw new Error(err.message);
       }
@@ -60,23 +51,27 @@ module.exports = (sequelize, DataTypes) => {
     }
   });
 
-  // Instance methods
-  User.prototype.comparePassword = async (pw) => {
+  // ====================== Class Methods
+
+  // ====================== Instance methods
+  User.prototype.toJSON = () => {
+    return {
+      id: this.id,
+      email: this.email,
+      firstName: this.firstName ? this.firstName : undefined,
+      lastName: this.lastName ? this.lastName : undefined
+    }
+  };
+
+  User.prototype.comparePassword = async (password) => {
     let err, pass;
     if(!this.password) {
       throw new Error('password not set');
     }
 
-    [err, pass] = await to(bcrypt_p.compare(pw, this.password));
-    if(err) {
-      throw new Error(err);
-    }
+    [err, pass] = await to(bcrypt_p.compare(password, this.password));
 
-    if(!pass) {
-      throw new Error('invalid password');
-    }
-
-    return this;
+    return (err || !pass) ? false : true;
   };
 
   User.prototype.getJWT = () => {

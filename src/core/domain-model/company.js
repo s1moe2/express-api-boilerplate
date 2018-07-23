@@ -40,11 +40,18 @@ module.exports = (sequelize, DataTypes) => {
     }*/
   });
 
+  // ====================== Associations
   Company.associate = (models) => {
     Company.hasMany(models.Employee, {
       foreignKey: 'companyID'
     });
   };
+
+  // ====================== Hooks
+
+  // ====================== Class Methods
+
+  // ====================== Instance Methods
 
   return Company;
 };

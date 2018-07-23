@@ -20,6 +20,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   });
 
+  // ====================== Associations
   Employee.associate = (models) => {
     Employee.belongsTo(models.Company, {
       foreignKey: 'companyID',
@@ -34,6 +35,12 @@ module.exports = (sequelize, DataTypes) => {
       foreignKey:'dmployeeID'
     });
   };
+
+  // ====================== Hooks
+
+  // ====================== Class Methods
+
+  // ====================== Instance Methods
 
   return Employee;
 };

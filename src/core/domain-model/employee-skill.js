@@ -16,6 +16,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   });
 
+  // ====================== Associations
   EmployeeSkill.associate = (models) => {
     EmployeeSkill.belongsTo(models.Employee, {
       foreignKey: 'employeeID',
@@ -24,6 +25,12 @@ module.exports = (sequelize, DataTypes) => {
       foreignKey: 'skillID',
     });
   };
+
+  // ====================== Hooks
+
+  // ====================== Class Methods
+
+  // ====================== Instance Methods
 
   return EmployeeSkill;
 };

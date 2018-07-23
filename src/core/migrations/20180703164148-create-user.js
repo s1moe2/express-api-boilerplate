@@ -24,10 +24,6 @@ module.exports = {
         type: DataTypes.STRING,
         allowNull: false
       },
-      passwordSalt: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
       createdAt: {
         allowNull: false,
         type: DataTypes.DATE

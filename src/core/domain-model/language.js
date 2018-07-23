@@ -12,12 +12,19 @@ module.exports = (sequelize, DataTypes) => {
     }
   });
 
+  // ====================== Associations
   Skill.associate = (models) => {
     Skill.belongsToMany(models.Employee, {
       through: models.EmployeeSkill,
       foreignKey:'skillID'
     });
   };
+
+  // ====================== Hooks
+
+  // ====================== Class Methods
+
+  // ====================== Instance Methods
 
   return Skill;
 };

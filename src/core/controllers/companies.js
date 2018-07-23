@@ -1,5 +1,5 @@
 const Op = require('sequelize').Op;
-const errors = require('throw.js');
+const Exceptions = require('../../util/exceptions');
 
 
 module.exports = (Company) => {
@@ -15,7 +15,7 @@ module.exports = (Company) => {
   async function getByID(companyID) {
     const company = await Company.findById(companyID);
     if (!company) {
-      throw new errors.NotFound();
+      throw new Exceptions.RecordNotFoundException();
     }
     return company;
   }
@@ -35,15 +35,15 @@ module.exports = (Company) => {
   // public
   async function create(name) {
     let company = await getByName(name);
-    if(company) {
-      throw new errors.Conflict();
+    if (company) {
+      throw new Exceptions.RecordAlreadyExistsException();
     }
 
     company = await Company.create({
       companyName: name
     });
     if (!company) {
-      throw new errors.InternalServerError();
+      throw new Exceptions.RecordCreationException();
     }
 
     return company;

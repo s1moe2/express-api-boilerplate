@@ -20,11 +20,21 @@ describe('Generic tests', () => {
       });
   });
 
-  it('should return 400', (done) => {
+  it('should return 404', (done) => {
     chai.request(app)
-      .get('/companies/doesntexist')
+      .get('/v1/doesntexist')
       .end((err, res) => {
         expect(res.status).to.equal(404);
+        done();
+      });
+  });
+
+  it('should return 200', (done) => {
+    chai.request(app)
+      .get('/v1')
+      .end((err, res) => {
+        expect(res.status).to.equal(200);
+        expect(res.body.data).to.be.empty;
         done();
       });
   });
@@ -72,6 +82,15 @@ describe('Companies endpoint tests', () => {
       .get('/v1/companies/123')
       .end((err, res) => {
         expect(res.status).to.equal(404);
+        done();
+      });
+  });
+
+  it('should reject invalid request', (done) => {
+    chai.request(app)
+      .get('/v1/companies/abc')
+      .end((err, res) => {
+        expect(res.status).to.equal(400);
         done();
       });
   });
