@@ -4,7 +4,7 @@ const logger = require('morgan');
 const helmet = require('helmet');
 const compression = require('compression');
 const cors = require('cors');
-const orm = require('./core/domain-model');
+const orm = require('./data/domain-model');
 const passport = require('passport');
 const routes = require('./routes');
 

@@ -5,7 +5,7 @@ const chai = require('chai');
 const chaiHttp = require('chai-http');
 const expect = chai.expect;
 
-const getCompanyController  = requireRoot('/core/controllers').companies;
+const getCompanyController  = requireRoot('/data/controllers').companies;
 
 
 chai.use(chaiHttp);

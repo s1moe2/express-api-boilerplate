@@ -1,8 +1,9 @@
+const requireRoot = require('app-root-path').require;
 const passport = require('passport');
 const jwt = require('jsonwebtoken');
 const HttpErrors = require('http-errors');
 const HttpStatus = require('http-status-codes');
-const orm = require('../../core/domain-model');
+const orm = requireRoot('/src/data/domain-model');
 const Op = require('sequelize').Op;
 const { validationResult } = require('express-validator/check');
 
@@ -95,7 +96,7 @@ function isAuthenticated(req, res, next) {
 
 function generateToken(user) {
   return jwt.sign({ _id: user.id }, process.env.JWT_SECRET, {
-    expiresIn: '24h'
+    expiresIn: `${process.env.JWT_TTL}h`
   });
 }
 

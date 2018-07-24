@@ -1,9 +1,10 @@
+const requireRoot = require('app-root-path').require;
 const express = require('express');
 const router = express.Router();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const HttpErrors = require('http-errors');
-const Exceptions = require('../../util/exceptions');
+const Exceptions = requireRoot('/src/util/exceptions');
 
 router.use(bodyParser.json());
 

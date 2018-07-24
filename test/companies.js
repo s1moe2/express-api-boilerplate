@@ -2,7 +2,7 @@ process.env.NODE_ENV = 'test';
 
 const requireRoot = require('app-root-path').require;
 const app = requireRoot('/src/app');
-const orm  = requireRoot('/src/core/domain-model');
+const orm  = requireRoot('/src/data/domain-model');
 
 const chai = require('chai');
 const chaiHttp = require('chai-http');

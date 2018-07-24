@@ -1,8 +1,9 @@
+const requireRoot = require('app-root-path').require;
 const express = require('express');
 const router = express.Router();
 
 const { check } = require('express-validator/check');
-const passportHelpers = require('../middleware/auth/passport-helpers');
+const passportHelpers = requireRoot('/src/middleware/auth/passport-helpers');
 
 router.post('/signin', [
   check('email').isEmail(),

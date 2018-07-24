@@ -1,4 +1,5 @@
-const orm = require('../domain-model');
+const requireRoot = require('app-root-path').require;
+const orm = requireRoot('/src/data/domain-model/');
 
 module.exports = {
   CompanyController: require('./companies')(orm),

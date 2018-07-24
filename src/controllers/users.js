@@ -1,5 +1,6 @@
+const requireRoot = require('app-root-path').require;
 const Op = require('sequelize').Op;
-const Exceptions = require('../../util/exceptions');
+const Exceptions = requireRoot('/src/util/exceptions');
 
 
 module.exports = (orm) => {
