@@ -1,12 +1,17 @@
 const HttpErrors = require('http-errors');
 const express = require('express');
+const expressValidator = require('express-validator');
 const logger = require('morgan');
 const helmet = require('helmet');
 const compression = require('compression');
 const cors = require('cors');
+const session = require('express-session');
+const pg = require('pg');
+const pgSessionStore = require('connect-pg-simple')(session);
+const orm = require('./core/domain-model');
 const passport = require('passport');
-const expressValidator = require('express-validator');
 const routes = require('./routes');
+
 const app = express();
 
 // middleware jungle
@@ -18,10 +23,29 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(require('./middleware/response'));
 
+/*app.use(session({
+  store: new pgSessionStore({
+    pg: pg,
+    tableName: 'Sessions',
+    //conString: 'postgresql://' + dbConfig.username + ':' + dbConfig.password + '@' + dbConfig.host + '/' + dbConfig.database
+    conString: 'postgresql://postgres:m00se@127.0.0.1/api_dev'
+  }),
+  secret: 'notsuchabigsecret', //appConfig.sessionKey,
+  cookie: {
+    maxAge: 14 * 24 * 60 * 60 * 1000
+  },
+  resave: false,
+  saveUninitialized: false
+}));*/
+
+
 // passport middleware
-const userController = require('./core/controllers').UserController; // TODO move this "injection" to a middlewares/index.js ??
-const passportMiddleware = require('./middleware/passport')(userController);
-app.use(passportMiddleware.init());
+app.use(passport.initialize());
+//app.use(passport.session());
+
+// passport configuration
+require('./middleware/auth/passport-config')(passport, orm);
+
 
 // routes
 app.use('/', routes);

@@ -1,7 +1,5 @@
 const bcrypt = require('bcrypt');
 const bcrypt_p = require('bcrypt-promise');
-const jwt = require('jsonwebtoken');
-const { to } = require('await-to-js');
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
@@ -34,18 +32,10 @@ module.exports = (sequelize, DataTypes) => {
 
   // ====================== Hooks
   User.beforeSave(async (user, options) => {
-    let err;
     if (user.changed('password')) {
       let salt, hash;
-      [err, salt] = await to(bcrypt.genSalt(10));
-      if(err) {
-        throw new Error(err.message);
-      }
-
-      [err, hash] = await to(bcrypt_p.hash(user.password, salt));
-      if(err) {
-        throw new Error(err.message);
-      }
+      salt = await bcrypt.genSalt(12);
+      hash = await bcrypt_p.hash(user.password, salt);
 
       user.password = hash;
     }
@@ -63,20 +53,12 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
 
-  User.prototype.comparePassword = async (password) => {
-    let err, pass;
-    if(!this.password) {
-      throw new Error('password not set');
-    }
-
-    [err, pass] = await to(bcrypt_p.compare(password, this.password));
-
-    return (err || !pass) ? false : true;
+  User.prototype.comparePassword = async function (password) {
+    return await bcrypt_p.compare(password, this.password);
   };
 
-  User.prototype.getJWT = () => {
-    let expiration_time = parseInt(10000 /*CONFIG.jwt_expiration*/);
-    return "Bearer "+jwt.sign({ user_id:this.id }, "alsoreplacethis"/*CONFIG.jwt_encryption*/, { expiresIn: expiration_time });
+  User.prototype.comparePasswordSync = function (password) {
+    return bcrypt.compareSync(password, this.password);
   };
 
   return User;

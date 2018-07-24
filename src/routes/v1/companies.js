@@ -5,8 +5,7 @@ const { param, validationResult } = require('express-validator/check');
 const HttpErrors = require('http-errors');
 const HttpStatus = require('http-status-codes');
 
-const Company = requireRoot('/src/core/domain-model').Company;
-const CompanyController = requireRoot('/src/core/controllers/companies')(Company);
+const CompanyController = requireRoot('/src/core/controllers').CompanyController;
 
 router.get('/', async (req, res, next) => {
   try {
@@ -29,7 +28,7 @@ router.get('/:id',
     try {
       const errors = validationResult(req);
       if (!errors.isEmpty()) {
-        res.apiError(new HttpErrors.BadRequest(), [req.params.id]);
+        res.apiError(new HttpErrors.BadRequest(), { errors: errors.array() });
       }
 
       const company = await CompanyController.getByID(req.params.id);

@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const HttpErrors = require('http-errors');
 const Exceptions = require('../../util/exceptions');
+const { verifyToken } = require('../../middleware/auth/passport-helpers');
 
 router.use(bodyParser.json());
 
@@ -14,7 +15,7 @@ router.use('//', function(req, res){
   res.apiSuccess({ message: "Welcome to the API", data: {} });
 });
 
-router.use('/companies', require('./companies'));
+router.use('/companies', verifyToken, require('./companies'));
 router.use('/users', require('./users'));
 
 router.use('*', function(req, res){
