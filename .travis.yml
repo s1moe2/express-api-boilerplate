@@ -9,4 +9,6 @@ before_script:
 script:
   - npm run coverage-rep
   - codecov
+env:
+  - JWT_SECRET=thisisanawesomesecretpleasedonttellanyone
 #after_success: 'npm run coveralls'
