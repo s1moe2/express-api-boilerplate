@@ -11,4 +11,5 @@ script:
   - codecov
 env:
   - JWT_SECRET=thisisanawesomesecretpleasedonttellanyone
+  - JWT_TTL=12
 #after_success: 'npm run coveralls'
