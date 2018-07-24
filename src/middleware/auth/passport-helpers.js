@@ -30,9 +30,9 @@ async function signin(req, res, next) {
     }
 
     // if user is found and password is right create a token
-    const token = jwt.sign(user.toJSON(), process.env.JWT_SECRET);
+    const token = generateToken(user);
     // return the information including token as JSON
-    return res.apiSuccess({ token: `JWT ${token}` });
+    return res.apiSuccess({ token: `Bearer ${token}` });
 
   } catch (err) {
     return next(new HttpErrors.InternalServerError());
@@ -73,28 +73,36 @@ async function signup(req, res, next) {
   }
 }
 
-function verifyToken(req, res, next) {
-  // Get auth header value
-  const bearerHeader = req.headers['authorization'];
-  // Check if bearer is undefined
-  if(typeof bearerHeader !== 'undefined') {
-    // Split at the space
-    const bearer = bearerHeader.split(' ');
-    // Get token from array
-    const bearerToken = bearer[1];
-    // Set the token
-    req.token = bearerToken;
-    // Next middleware
-    next();
-  } else {
-    // Forbidden
-    res.apiError(new HttpErrors.Forbidden());
-  }
+function isAuthenticated(req, res, next) {
+  return passport.authenticate('jwt', { session: false })(req, res, next);
 
+  // TODO Keeping it simple... No custom authentication callback needed for now
+  /*return passport.authenticate('jwt', (err, user, info) => {
+    if (err) {
+      return next(err);
+    }
+
+    if (!user) {
+      return next(new HttpErrors.Forbidden());
+    }
+
+    // TODO in the future if we need to add more token validations this is the place. Revoked tokens, etc
+
+    req.user = user;
+    next();
+  })(req, res, next);*/
 }
+
+function generateToken(user) {
+  return jwt.sign({ _id: user.id }, process.env.JWT_SECRET, {
+    expiresIn: '24h'
+  });
+}
+
+
 
 module.exports = {
   signin,
   signup,
-  verifyToken
+  isAuthenticated
 };

@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const HttpErrors = require('http-errors');
 const Exceptions = require('../../util/exceptions');
-const { verifyToken } = require('../../middleware/auth/passport-helpers');
 
 router.use(bodyParser.json());
 

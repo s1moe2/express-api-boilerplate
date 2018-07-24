@@ -88,4 +88,21 @@ describe('Authentication endpoint tests', () => {
         done();
       });
   });
+
+  it('should login successfully and receive token', (done) => {
+    chai.request(app)
+      .post('/signin')
+      .send({
+        email: 'rick@sanchez.xx',
+        password: 'morty'
+      })
+      .end((err, res) => {
+        expect(err).to.be.null;
+        expect(res.redirects.length).to.equal(0);
+        expect(res.status).to.equal(200);
+        expect(res.type).to.equal('application/json');
+        expect(res.body.token).to.not.be.empty;
+        done();
+      });
+  });
 });

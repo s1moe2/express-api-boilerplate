@@ -5,7 +5,7 @@ const { param, validationResult } = require('express-validator/check');
 const HttpErrors = require('http-errors');
 const HttpStatus = require('http-status-codes');
 
-const CompanyController = requireRoot('/src/core/controllers').CompanyController;
+const { CompanyController } = requireRoot('/src/core/controllers');
 
 router.get('/', async (req, res, next) => {
   try {
