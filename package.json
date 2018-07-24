@@ -21,7 +21,7 @@
     "pretest": "NODE_ENV=test sequelize db:migrate",
     "test": "NODE_ENV=development mocha -r chai/register-should --recursive --exit",
     "start": "node ./src/bin/server.js",
-    "coverage": "NODE_ENV=test nyc --reporter=html mocha ./test/end-to-end.js -r chai/register-should --exit",
+    "coverage": "NODE_ENV=test nyc --reporter=html mocha -r chai/register-should --recursive --exit",
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
     "coverage-rep": "NODE_ENV=test nyc --reporter=text-lcov > coverage.lcov mocha ./test/end-to-end.js -r chai/register-should --exit && codecov"
   },
