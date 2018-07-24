@@ -1,6 +1,9 @@
 # configs
 src/config/*.json
 
+# env variables
+.env
+
 # idea
 .idea/*
 

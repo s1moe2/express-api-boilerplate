@@ -15,7 +15,7 @@ router.use('//', function(req, res){
   res.apiSuccess({ message: "Welcome to the API", data: {} });
 });
 
-router.use('/companies', verifyToken, require('./companies'));
+router.use('/companies', require('./companies'));
 router.use('/users', require('./users'));
 
 router.use('*', function(req, res){

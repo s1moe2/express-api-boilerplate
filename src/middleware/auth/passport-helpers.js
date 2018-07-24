@@ -6,7 +6,6 @@ const orm = require('../../core/domain-model');
 const Op = require('sequelize').Op;
 const { validationResult } = require('express-validator/check');
 
-const secret = "thisisnotasecret";
 
 async function signin(req, res, next) {
   const errors = validationResult(req);
@@ -26,12 +25,12 @@ async function signin(req, res, next) {
     if (!user) {
       return next(new HttpErrors.Unauthorized());
     }
-    if (!user.comparePassword(password)) {
+    if (!user.comparePasswordSync(req.body.password)) {
       return next(new HttpErrors.Unauthorized());
     }
 
     // if user is found and password is right create a token
-    const token = jwt.sign(user, config.secret);
+    const token = jwt.sign(user.toJSON(), process.env.JWT_SECRET);
     // return the information including token as JSON
     return res.apiSuccess({ token: `JWT ${token}` });
 

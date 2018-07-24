@@ -1,18 +1,16 @@
-const LocalStrategy = require('passport-local').Strategy;
-const Exceptions = require('../../util/exceptions');
-const Op = require('sequelize').Op;
+//const LocalStrategy = require('passport-local').Strategy;
+//const Exceptions = require('../../util/exceptions');
+//const Op = require('sequelize').Op;
 
 
 const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
 
 
-const secret = "thisisnotasecret";
-
 module.exports = (passport, orm) => {
   let opts = {};
   opts.jwtFromRequest = ExtractJwt.fromHeader('authorization');
-  opts.secretOrKey = secret;
+  opts.secretOrKey = process.env.JWT_SECRET;
   passport.use(new JwtStrategy(opts, (jwt_payload, done) => {
     orm.User.findById(jwt_payload.id)
       .then((user) => {
