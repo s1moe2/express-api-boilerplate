@@ -14,7 +14,7 @@ module.exports = {
       },
       firstName: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
       },
       lastName: {
         type: DataTypes.STRING,
@@ -23,6 +23,17 @@ module.exports = {
       password: {
         type: DataTypes.STRING,
         allowNull: false
+      },
+      isConfirmed: {
+        type: DataTypes.BOOLEAN
+      },
+      confirmationToken: {
+        type: DataTypes.STRING,
+        allowNull: true
+      },
+      recoveryToken: {
+        type: DataTypes.STRING,
+        allowNull: true
       },
       createdAt: {
         allowNull: false,

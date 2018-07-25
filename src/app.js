@@ -5,6 +5,7 @@ const helmet = require('helmet');
 const compression = require('compression');
 const cors = require('cors');
 const orm = require('./data/domain-model');
+const passportConfig = require('./middleware/auth/passport-config');
 const passport = require('passport');
 const routes = require('./routes');
 
@@ -25,7 +26,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // passport configuration
-require('./middleware/auth/passport-config')(passport, orm);
+passportConfig.init(passport, orm);
 
 
 // routes

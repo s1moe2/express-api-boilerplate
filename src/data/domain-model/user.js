@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     firstName: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     lastName: {
       type: DataTypes.STRING,
@@ -25,14 +25,25 @@ module.exports = (sequelize, DataTypes) => {
     password: {
       type: DataTypes.STRING,
       allowNull: false
-    }
+    },
+    isConfirmed: {
+      type: DataTypes.BOOLEAN
+    },
+    confirmationToken: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    recoveryToken: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
   });
 
   // ====================== Associations
 
   // ====================== Hooks
   User.beforeSave(async (user, options) => {
-    if (user.changed('password')) {
+    if (user.changed('password') || user.changed('confirmationToken') || user.changed('recoveryToken')) {
       let salt, hash;
       salt = await bcrypt.genSalt(12);
       hash = await bcrypt_p.hash(user.password, salt);
@@ -59,6 +70,14 @@ module.exports = (sequelize, DataTypes) => {
 
   User.prototype.comparePasswordSync = function (password) {
     return bcrypt.compareSync(password, this.password);
+  };
+
+  User.prototype.compareConfirmationTokenSync = function (token) {
+    return bcrypt.compareSync(token, this.confirmationToken);
+  };
+
+  User.prototype.compareRecoveryTokenSync = function (token) {
+    return bcrypt.compareSync(token, this.recoveryToken);
   };
 
   return User;
