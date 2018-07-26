@@ -68,16 +68,12 @@ module.exports = (sequelize, DataTypes) => {
     return await bcrypt_p.compare(password, this.password);
   };
 
-  User.prototype.comparePasswordSync = function (password) {
-    return bcrypt.compareSync(password, this.password);
+  User.prototype.compareConfirmationToken = async function (token) {
+    return await bcrypt_p.compare(token, this.confirmationToken);
   };
 
-  User.prototype.compareConfirmationTokenSync = function (token) {
-    return bcrypt.compareSync(token, this.confirmationToken);
-  };
-
-  User.prototype.compareRecoveryTokenSync = function (token) {
-    return bcrypt.compareSync(token, this.recoveryToken);
+  User.prototype.compareRecoveryToken = async function (token) {
+    return await bcrypt_p.compare(token, this.recoveryToken);
   };
 
   return User;

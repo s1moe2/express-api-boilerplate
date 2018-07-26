@@ -25,7 +25,7 @@ const signin = async (req, res, next) => {
     if (!user) {
       return next(new HttpErrors.Unauthorized());
     }
-    if (!user.comparePasswordSync(req.body.password)) {
+    if (!user.comparePassword(req.body.password)) {
       return next(new HttpErrors.Unauthorized());
     }
 

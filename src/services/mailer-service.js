@@ -14,15 +14,16 @@ async function sendSingleEmail(template, recipient, substitutions) {
         address: recipient,
         substitution_data: substitutions
     }]
-    /*options: {
-      sandbox: false
-    },*/
   });
 }
 
 
 
 async function sendSignupConfirmationEmail(user, token) {
+  if(!process.env.MAILER_ENABLED) {
+    return true;
+  }
+
   let recipient = user.email;
   let name = user.firstName;
   // override recipient in dev/test if override is set
