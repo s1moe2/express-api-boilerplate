@@ -1,6 +1,6 @@
 // Using api keu from env var SPARKPOST_API_KEY
 const SparkPost = require('sparkpost');
-const client = new SparkPost();
+const client = new SparkPost(process.env.SPARKPOST_API_KEY);
 
 // SparkPost template names (it's possible to get this via API and
 const SIGNUP_CONFIRM_TEMPLATE = 'signup-confirmation';
