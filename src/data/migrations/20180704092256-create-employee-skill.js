@@ -23,11 +23,11 @@ module.exports = {
       },
       createdAt: {
         allowNull: false,
-        type: DataTypes.DATE,
+        type: DataTypes.DATE
       },
       updatedAt: {
         allowNull: false,
-        type: DataTypes.DATE,
+        type: DataTypes.DATE
       },
       deletedAt: {
         allowNull: true,
@@ -35,5 +35,5 @@ module.exports = {
       }
     }),
   down: (queryInterface) =>
-    queryInterface.dropTable('EmployeeSkill'),
-};
+    queryInterface.dropTable('EmployeeSkill')
+}

@@ -1,5 +1,5 @@
 module.exports = {
-  up: function(queryInterface, DataTypes) {
+  up: function (queryInterface, DataTypes) {
     return queryInterface.createTable('Users', {
       id: {
         type: DataTypes.BIGINT,
@@ -45,10 +45,10 @@ module.exports = {
       },
       deletedAt: {
         type: DataTypes.DATE
-      },
-    });
+      }
+    })
   },
-  down: function(queryInterface, DataTypes) {
-    return queryInterface.dropTable('Users');
+  down: function (queryInterface, DataTypes) {
+    return queryInterface.dropTable('Users')
   }
-};
+}

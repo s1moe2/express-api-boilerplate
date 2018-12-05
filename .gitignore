@@ -4,8 +4,9 @@ src/config/*.json
 # env variables
 .env
 
-# idea
-.idea/*
+# IDE
+.idea
+.vscode
 
 # Logs
 logs

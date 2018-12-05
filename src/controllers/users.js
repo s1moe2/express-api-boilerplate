@@ -1,70 +1,22 @@
-const requireRoot = require('app-root-path').require;
-const Op = require('sequelize').Op;
-const Exceptions = requireRoot('/src/util/exceptions');
+const requireRoot = require('app-root-path').require
+const Exceptions = requireRoot('/src/util/exceptions')
 
+const { users } = requireRoot('/src/services')
 
-module.exports = (orm) => {
-
-  // public
-  async function getAll() {
-    return await orm.User.findAll();
+const getByID = async (userID) => {
+  const user = await users.findById(userID)
+  if (!user) {
+    throw new Exceptions.RecordNotFoundException()
   }
 
-  // public
-  async function getByID(userID) {
-    const user = await orm.User.findById(userID);
-    if (!user) {
-      throw new Exceptions.RecordNotFoundException();
-    }
+  return user
+}
 
-    return user;
-  }
+const create = (fields) => {
+  return users.createUser(fields)
+}
 
-  async function getByEmail(email) {
-    const user = await orm.User.findOne({
-      where: {
-        email: {
-          [Op.eq]: email
-        }
-      }
-    });
-
-    return user;
-  }
-
-  // public
-  async function authenticate(email, password) {
-    const user = await getByEmail(email);
-
-    if (!user) {
-      throw new Exceptions.RecordNotFoundException();
-    }
-
-    if (!user.comparePassword(password)) {
-      throw new Exceptions.AuthenticationException();
-    }
-
-    return user.toJSON();
-  }
-
-  // public
-  async function create(fields) {
-    let user = await getByEmail(fields.email);
-    if(user) {
-      throw new Exceptions.RecordAlreadyExistsException();
-    }
-
-    user = await orm.User.create(fields);
-    if (!user) {
-      throw new Exceptions.RecordCreationException();
-    }
-
-    return user.toJSON();
-  }
-
-  return {
-    authenticate,
-    getByID,
-    create
-  };
-};
+module.exports = {
+  getByID,
+  create
+}

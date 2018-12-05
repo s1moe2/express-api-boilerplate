@@ -10,15 +10,15 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING(128),
       allowNull: false
     }
-  });
+  })
 
   // ====================== Associations
   Skill.associate = (models) => {
     Skill.belongsToMany(models.Employee, {
       through: models.EmployeeSkill,
-      foreignKey:'skillID'
-    });
-  };
+      foreignKey: 'skillID'
+    })
+  }
 
   // ====================== Hooks
 
@@ -26,5 +26,5 @@ module.exports = (sequelize, DataTypes) => {
 
   // ====================== Instance Methods
 
-  return Skill;
-};
+  return Skill
+}

@@ -1,30 +1,25 @@
-const requireRoot = require('app-root-path').require;
-const express = require('express');
-const router = express.Router();
+const requireRoot = require('app-root-path').require
+const express = require('express')
+const router = express.Router()
+const { check, body } = require('express-validator/check')
 
-const { check, body } = require('express-validator/check');
-const AuthService = requireRoot('/src/services/auth-service');
+const { auth } = requireRoot('/src/controllers')
+const { controllerHandler: c } = requireRoot('/src/util/routing')
 
 router.post('/signin', [
-  check('email').isEmail(),
-  check('password').isLength({ min: 5 })
-], AuthService.signin);
+  check('email').isEmail()
+], c(auth.signin, (req, res, next) => [req, res, next]))
 
 router.post('/signup', [
   check('email').isEmail(),
   check('password').isLength({ min: 5 }),
-  //body('confirmPassword', 'Passwords do not match').equals(req.body.password)
   body('confirmPassword').custom(async (value, { req }) => {
     if (value !== req.body.password) {
-      throw new Error('Password confirmation does not match password');
+      throw new Error('Password confirmation does not match password')
     }
   })
-], AuthService.signup);
+], c(auth.signup, (req, res, next) => [req, res, next]))
 
-router.get('/confirm', (req, res) => {
-  console.log("CONFIRMED");
-  console.log(req.query.t);
-  res.apiSuccess();
-});
+router.get('/confirm', c(auth.confirm, (req) => [req.query.token]))
 
-module.exports = router;
+module.exports = router

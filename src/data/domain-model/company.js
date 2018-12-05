@@ -10,17 +10,17 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true
-    },
+    }
   }, {
     timestamps: true,
 
     paranoid: true,
 
-    /*defaultScope: {
+    /* defaultScope: {
       where: {
         isDeleted: false
       }
-    },*/
+    }, */
 
     scopes: {
       deleted: {
@@ -28,24 +28,24 @@ module.exports = (sequelize, DataTypes) => {
           deleted: true
         }
       }
-    },
+    }
 
-    /*instanceMethods: {
+    /* instanceMethods: {
       toSimpleJSON: () => {
         return {
           id: this.id,
           name: this.companyName
         }
       }
-    }*/
-  });
+    } */
+  })
 
   // ====================== Associations
   Company.associate = (models) => {
     Company.hasMany(models.Employee, {
       foreignKey: 'companyID'
-    });
-  };
+    })
+  }
 
   // ====================== Hooks
 
@@ -53,5 +53,5 @@ module.exports = (sequelize, DataTypes) => {
 
   // ====================== Instance Methods
 
-  return Company;
-};
+  return Company
+}

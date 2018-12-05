@@ -3,21 +3,9 @@
   "description": "Simple Node.js+Express+Sequelize API server.js boilerplate",
   "version": "1.0.0",
   "author": "Diogo Simões",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://simoes12@bitbucket.org/simoes12/api-repository.git"
-  },
-  "keywords": [
-    "express",
-    "sequelize",
-    "boilerplate",
-    "rest",
-    "restful",
-    "api"
-  ],
   "scripts": {
-    "dev": "NODE_ENV=development DEBUG=* sequelize db:migrate && nodemon ./src/bin/server.js",
+    "lint": "eslint src/ --ext .js",
+    "dev": "NODE_ENV=development DEBUG=* nodemon ./src/bin/server.js",
     "dev-hard": "NODE_ENV=development sequelize db:drop && sequelize db:create && sequelize db:migrate && DEBUG=* nodemon ./src/bin/server.js",
     "pretest": "NODE_ENV=test sequelize db:migrate",
     "test": "NODE_ENV=development mocha -r chai/register-should --recursive --exit",
@@ -54,6 +42,12 @@
     "codecov": "3.1.0",
     "coveralls": "3.0.2",
     "dotenv": "6.1.0",
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
     "mocha": "5.2.0",
     "nodemon": "1.18.7",
     "nyc": "13.1.0",

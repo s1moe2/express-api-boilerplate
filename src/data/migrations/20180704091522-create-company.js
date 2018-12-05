@@ -9,15 +9,15 @@ module.exports = {
       },
       companyName: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: false
       },
       createdAt: {
         allowNull: false,
-        type: DataTypes.DATE,
+        type: DataTypes.DATE
       },
       updatedAt: {
         allowNull: false,
-        type: DataTypes.DATE,
+        type: DataTypes.DATE
       },
       deletedAt: {
         allowNull: true,
@@ -25,5 +25,5 @@ module.exports = {
       }
     }),
   down: (queryInterface) =>
-    queryInterface.dropTable('Companies'),
-};
+    queryInterface.dropTable('Companies')
+}

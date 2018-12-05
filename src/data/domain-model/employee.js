@@ -18,23 +18,23 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.BIGINT,
       allowNull: true
     }
-  });
+  })
 
   // ====================== Associations
   Employee.associate = (models) => {
     Employee.belongsTo(models.Company, {
-      foreignKey: 'companyID',
-    });
+      foreignKey: 'companyID'
+    })
 
     Employee.belongsTo(models.User, {
-      foreignKey: 'userID',
-    });
+      foreignKey: 'userID'
+    })
 
     Employee.belongsToMany(models.Skill, {
       through: models.EmployeeSkill,
-      foreignKey:'dmployeeID'
-    });
-  };
+      foreignKey: 'dmployeeID'
+    })
+  }
 
   // ====================== Hooks
 
@@ -42,5 +42,5 @@ module.exports = (sequelize, DataTypes) => {
 
   // ====================== Instance Methods
 
-  return Employee;
-};
+  return Employee
+}

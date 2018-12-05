@@ -1,57 +1,15 @@
-const requireRoot = require('app-root-path').require;
-const express = require('express');
-const router = express.Router();
-const { param, validationResult } = require('express-validator/check');
-const HttpErrors = require('http-errors');
-const HttpStatus = require('http-status-codes');
+const requireRoot = require('app-root-path').require
+const express = require('express')
+const router = express.Router()
 
-const { CompanyController } = requireRoot('/src/controllers');
+const { isAuthenticated } = requireRoot('/src/middleware/auth/passport-config')
+const { companies } = requireRoot('/src/controllers')
+const { controllerHandler: c } = requireRoot('/src/util/routing')
 
-router.get('/', async (req, res, next) => {
-  try {
-    const companies = await CompanyController.getAll();
+router.get('/', isAuthenticated, c(companies.getAll))
 
-    return res.apiSuccess(companies);
-  } catch(err) {
-    next(err);
-  }
-});
+router.get('/:id', isAuthenticated, c(companies.getByID, (req) => [req.params.id]))
 
-router.get('/:id',
-  // validations
-  [
-    param('id').isNumeric()
-  ],
+router.post('/', isAuthenticated, c(companies.create, (req) => [req.body.name]))
 
-  // juice
-  async (req, res, next) => {
-    try {
-      const errors = validationResult(req);
-      if (!errors.isEmpty()) {
-        res.apiError(new HttpErrors.BadRequest(), { errors: errors.array() });
-      }
-
-      const company = await CompanyController.getByID(req.params.id);
-
-      return res.apiSuccess(company);
-    } catch(err) {
-      next(err);
-    }
-  }
-);
-
-router.post('/', async (req, res, next) => {
-  try {
-    const company = await CompanyController.create(req.body.name);
-
-    if(!company) {
-      return res.apiError(new HttpErrors.InternalServerError());
-    }
-
-    return res.apiSuccess(company, HttpStatus.CREATED);
-  } catch(err) {
-    next(err);
-  }
-});
-
-module.exports = router;
+module.exports = router

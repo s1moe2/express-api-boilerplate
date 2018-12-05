@@ -9,7 +9,7 @@ module.exports = {
       },
       name: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: false
       },
       companyID: {
         type: DataTypes.BIGINT,
@@ -33,11 +33,11 @@ module.exports = {
       },
       createdAt: {
         allowNull: false,
-        type: DataTypes.DATE,
+        type: DataTypes.DATE
       },
       updatedAt: {
         allowNull: false,
-        type: DataTypes.DATE,
+        type: DataTypes.DATE
       },
       deletedAt: {
         allowNull: true,
@@ -45,5 +45,5 @@ module.exports = {
       }
     }),
   down: (queryInterface) =>
-    queryInterface.dropTable('Employees'),
-};
+    queryInterface.dropTable('Employees')
+}

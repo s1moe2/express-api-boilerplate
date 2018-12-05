@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config()
 
 const commonConfig = {
   dialect: process.env.DB_DIALECT || 'postgres',
@@ -8,10 +8,10 @@ const commonConfig = {
   username: process.env.DB_USER || 'postgres',
   password: process.env.DB_PASSWORD || '',
   operatorsAliases: false
-};
+}
 
 module.exports = {
   development: commonConfig,
   test: commonConfig,
   production: commonConfig
-};
+}
