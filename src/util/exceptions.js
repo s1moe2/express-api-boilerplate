@@ -44,5 +44,5 @@ module.exports = {
   RecordAlreadyExistsException,
   RecordNotFoundException,
   RecordCreationException,
-  AuthenticationException
+  AuthenticationException,
 }

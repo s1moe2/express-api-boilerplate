@@ -4,11 +4,10 @@ const router = express.Router()
 const { check, body } = require('express-validator/check')
 
 const { auth } = requireRoot('/src/controllers')
-const { controllerHandler: c } = requireRoot('/src/util/routing')
 
 router.post('/signin', [
-  check('email').isEmail()
-], c(auth.signin, (req, res, next) => [req, res, next]))
+  check('email').isEmail(),
+], auth.signin)
 
 router.post('/signup', [
   check('email').isEmail(),
@@ -17,9 +16,9 @@ router.post('/signup', [
     if (value !== req.body.password) {
       throw new Error('Password confirmation does not match password')
     }
-  })
-], c(auth.signup, (req, res, next) => [req, res, next]))
+  }),
+], auth.signup)
 
-router.get('/confirm', c(auth.confirm, (req) => [req.query.token]))
+router.get('/confirm', auth.confirm)
 
 module.exports = router

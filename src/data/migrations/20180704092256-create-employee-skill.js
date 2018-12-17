@@ -6,34 +6,34 @@ module.exports = {
         primaryKey: true,
         references: {
           model: 'Employees',
-          key: 'id'
+          key: 'id',
         },
         onUpdate: 'CASCADE',
-        onDelete: 'RESTRICT'
+        onDelete: 'RESTRICT',
       },
       languageID: {
         type: DataTypes.BIGINT,
         primaryKey: true,
         references: {
           model: 'Skills',
-          key: 'id'
+          key: 'id',
         },
         onUpdate: 'CASCADE',
-        onDelete: 'RESTRICT'
+        onDelete: 'RESTRICT',
       },
       createdAt: {
         allowNull: false,
-        type: DataTypes.DATE
+        type: DataTypes.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: DataTypes.DATE
+        type: DataTypes.DATE,
       },
       deletedAt: {
         allowNull: true,
-        type: DataTypes.DATE
-      }
+        type: DataTypes.DATE,
+      },
     }),
   down: (queryInterface) =>
-    queryInterface.dropTable('EmployeeSkill')
+    queryInterface.dropTable('EmployeeSkill'),
 }

@@ -1,7 +1,6 @@
 const requireRoot = require('app-root-path').require
 const Exceptions = requireRoot('/src/util/exceptions')
-
-const { users } = requireRoot('/src/services')
+const { users } = requireRoot('/src/data/repositories')
 
 const getByID = async (userID) => {
   const user = await users.findById(userID)
@@ -18,5 +17,5 @@ const create = (fields) => {
 
 module.exports = {
   getByID,
-  create
+  create,
 }

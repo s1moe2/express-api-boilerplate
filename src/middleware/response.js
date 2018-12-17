@@ -4,7 +4,7 @@ function getFailJson (err, fields = undefined, stackTrace = undefined) {
   return {
     error: err.message,
     errorFields: fields,
-    stack: stackTrace
+    stack: stackTrace,
   }
 }
 

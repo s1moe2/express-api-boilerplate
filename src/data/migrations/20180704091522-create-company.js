@@ -5,25 +5,25 @@ module.exports = {
         type: DataTypes.BIGINT,
         allowNull: false,
         autoIncrement: true,
-        primaryKey: true
+        primaryKey: true,
       },
       companyName: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
       },
       createdAt: {
         allowNull: false,
-        type: DataTypes.DATE
+        type: DataTypes.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: DataTypes.DATE
+        type: DataTypes.DATE,
       },
       deletedAt: {
         allowNull: true,
-        type: DataTypes.DATE
-      }
+        type: DataTypes.DATE,
+      },
     }),
   down: (queryInterface) =>
-    queryInterface.dropTable('Companies')
+    queryInterface.dropTable('Companies'),
 }

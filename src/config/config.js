@@ -7,11 +7,11 @@ const commonConfig = {
   database: process.env.DB_NAME || '',
   username: process.env.DB_USER || 'postgres',
   password: process.env.DB_PASSWORD || '',
-  operatorsAliases: false
+  operatorsAliases: false,
 }
 
 module.exports = {
   development: commonConfig,
   test: commonConfig,
-  production: commonConfig
+  production: commonConfig,
 }

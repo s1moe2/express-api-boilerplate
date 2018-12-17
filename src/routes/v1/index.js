@@ -13,8 +13,9 @@ router.use('//', function (req, res) {
   res.apiSuccess({ message: 'Welcome to the API', data: {} })
 })
 
-router.use('/companies', require('./companies'))
+router.use('/auth', require('./auth'))
 router.use('/users', require('./users'))
+router.use('/companies', require('./companies'))
 
 router.use('*', function (req, res) {
   res.apiError(new HttpErrors.NotFound())

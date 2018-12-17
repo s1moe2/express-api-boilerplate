@@ -7,9 +7,9 @@ const findByID = (companyID) => {
   return orm.Company.findByPk(companyID)
 }
 
-const findCompanies = () => {
+const getAllCompanies = () => {
   return orm.Company.findAll({
-    attributes: ['id', 'companyName']
+    attributes: ['id', 'companyName'],
   })
 }
 
@@ -17,9 +17,9 @@ const findByName = (name) => {
   return orm.Company.find({
     where: {
       companyName: {
-        [Op.eq]: name
-      }
-    }
+        [Op.eq]: name,
+      },
+    },
   })
 }
 
@@ -30,7 +30,7 @@ const createCompany = async (name) => {
   }
 
   company = await orm.Company.create({
-    companyName: name
+    companyName: name,
   })
   if (!company) {
     throw new Exceptions.RecordCreationException()
@@ -41,7 +41,7 @@ const createCompany = async (name) => {
 
 module.exports = {
   findByID,
-  findCompanies,
+  getAllCompanies,
   findByName,
-  createCompany
+  createCompany,
 }

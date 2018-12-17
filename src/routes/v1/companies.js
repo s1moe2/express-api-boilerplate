@@ -4,12 +4,13 @@ const router = express.Router()
 
 const { isAuthenticated } = requireRoot('/src/middleware/auth/passport-config')
 const { companies } = requireRoot('/src/controllers')
-const { controllerHandler: c } = requireRoot('/src/util/routing')
 
-router.get('/', isAuthenticated, c(companies.getAll))
+router.get('/', isAuthenticated, companies.list)
 
-router.get('/:id', isAuthenticated, c(companies.getByID, (req) => [req.params.id]))
+router.get('/:id', isAuthenticated, companies.getByID)
 
-router.post('/', isAuthenticated, c(companies.create, (req) => [req.body.name]))
+router.post('/', isAuthenticated, companies.create)
+
+// router.post('/', isAuthenticated, companies.update)
 
 module.exports = router

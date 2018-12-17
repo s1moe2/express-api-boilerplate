@@ -9,12 +9,12 @@ const SIGNUP_CONFIRM_TEMPLATE = 'signup-confirmation'
 function sendSingleEmail (template, recipient, substitutions) {
   return client.transmissions.send({
     content: {
-      template_id: template
+      template_id: template,
     },
     recipients: [{
       address: recipient,
-      substitution_data: substitutions
-    }]
+      substitution_data: substitutions,
+    }],
   })
 }
 
@@ -33,11 +33,11 @@ function sendSignupConfirmationEmail (user, token) {
 
   return sendSingleEmail(SIGNUP_CONFIRM_TEMPLATE, recipient, {
     firstName: name,
-    token: token
+    token: token,
   })
 }
 
 module.exports = {
   sendSingleEmail,
-  sendSignupConfirmationEmail
+  sendSignupConfirmationEmail,
 }

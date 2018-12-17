@@ -5,7 +5,7 @@ const Op = require('sequelize').Op
 const Exceptions = requireRoot('/src/util/exceptions')
 
 const mailer = require('./mailer')
-const users = require('./users')
+const { users } = requireRoot('/src/data/repositories')
 
 const authenticate = async (email, password) => {
   const user = await users.findByEmail(email)
@@ -44,9 +44,9 @@ const checkConfirmationToken = async (token) => {
   const user = await orm.User.findOne({
     where: {
       confirmationToken: {
-        [Op.eq]: token
-      }
-    }
+        [Op.eq]: token,
+      },
+    },
   })
 
   if (user) {
@@ -61,7 +61,7 @@ const checkConfirmationToken = async (token) => {
 
 const generateToken = (user, ttl) => {
   return jwt.sign({ _id: user.id }, process.env.JWT_SECRET, {
-    expiresIn: `${ttl}h`
+    expiresIn: `${ttl}h`,
   })
 }
 
@@ -69,5 +69,5 @@ module.exports = {
   authenticate,
   sendConfirmation,
   checkConfirmationToken,
-  generateToken
+  generateToken,
 }

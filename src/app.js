@@ -1,5 +1,6 @@
 const HttpErrors = require('http-errors')
 const express = require('express')
+require('express-async-errors')
 const logger = require('morgan')
 const helmet = require('helmet')
 const compression = require('compression')
@@ -7,6 +8,7 @@ const cors = require('cors')
 const passportConfig = require('./middleware/auth/passport-config')
 const passport = require('passport')
 const routes = require('./routes')
+const exceptions = require('./util/exceptions')
 
 const app = express()
 
@@ -23,30 +25,30 @@ app.use(require('./middleware/response'))
 app.use(passport.initialize())
 app.use(passport.session())
 
-// passport configuration
+// passport configuration & initialization
 passportConfig.init()
 
-// routes
+// app routes
 app.use('/', routes)
 
-// catch 404 and forward to error handler
-app.use((req, res, next) => {
+
+
+// catch 404
+app.use((req, res) => {
   res.apiError(new HttpErrors.NotFound())
 })
 
 // error handler
 app.use((err, req, res, next) => {
+  if (err instanceof exceptions.AppException) {
+    res.apiError(err)
+  }
+
   // set locals, only providing error in development
   res.locals.message = err.message
   res.locals.error = req.app.get('env') === 'development' ? err : {}
 
-  res.status(err.status || 500)
-  res.json(err.message)
+  res.apiError(new HttpErrors.Internal(err.status || 500, err.message))
 })
 
 module.exports = app
-
-// "Handle" all the uncaught promise rejections
-process.on('unhandledRejection', error => {
-  console.error('Uncaught Error', error)
-})

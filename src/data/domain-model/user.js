@@ -7,36 +7,36 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.BIGINT,
       allowNull: false,
       autoIncrement: true,
-      primaryKey: true
+      primaryKey: true,
     },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true
+      unique: true,
     },
     firstName: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: true,
     },
     lastName: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: true,
     },
     password: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     isConfirmed: {
-      type: DataTypes.BOOLEAN
+      type: DataTypes.BOOLEAN,
     },
     confirmationToken: {
       type: DataTypes.STRING,
-      allowNull: true
+      allowNull: true,
     },
     recoveryToken: {
       type: DataTypes.STRING,
-      allowNull: true
-    }
+      allowNull: true,
+    },
   })
 
   // ====================== Associations
@@ -60,7 +60,7 @@ module.exports = (sequelize, DataTypes) => {
       id: this.id,
       email: this.email,
       firstName: this.firstName ? this.firstName : undefined,
-      lastName: this.lastName ? this.lastName : undefined
+      lastName: this.lastName ? this.lastName : undefined,
     }
   }
 

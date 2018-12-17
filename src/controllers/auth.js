@@ -3,7 +3,8 @@ const HttpStatus = require('http-status-codes')
 const { validationResult } = require('express-validator/check')
 const Exceptions = requireRoot('/src/util/exceptions')
 
-const { users, auth } = requireRoot('/src/services')
+const { auth } = requireRoot('/src/services')
+const { users } = requireRoot('/src/data/repositories')
 
 /**
  * Sign in using email and password.
@@ -44,7 +45,7 @@ const signup = (req, res, next) => {
         email: req.body.email,
         firstName: req.body.firstName,
         lastName: req.body.lastName,
-        password: req.body.password
+        password: req.body.password,
       })
 
       try {
@@ -59,12 +60,12 @@ const signup = (req, res, next) => {
   })
 }
 
-const confirm = async (token) => {
-  return auth.checkConfirmationToken(token)
+const confirm = async (req, res, next) => {
+  return auth.checkConfirmationToken(req.query.token)
 }
 
 module.exports = {
   signin,
   signup,
-  confirm
+  confirm,
 }

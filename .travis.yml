@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "8"
+  - "10"
 services:
   - postgresql
 before_script:
@@ -11,7 +11,7 @@ script:
   - codecov
 env:
   global:
-    - JWT_SECRET=thisisanawesomesecretpleasedonttellanyone
+    - JWT_SECRET=nasifah8o7ryq34dbyi6rewie6td8y34bodq384ufao
     - JWT_TTL=12
     - MAILER_ENABLED=0
     - SPARKPOST_API_KEY=notakey

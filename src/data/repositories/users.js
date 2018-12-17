@@ -11,9 +11,9 @@ const findByEmail = (email) => {
   return orm.User.findOne({
     where: {
       email: {
-        [Op.eq]: email
-      }
-    }
+        [Op.eq]: email,
+      },
+    },
   })
 }
 
@@ -34,5 +34,5 @@ const createUser = async (newUser) => {
 module.exports = {
   findByID,
   findByEmail,
-  createUser
+  createUser,
 }

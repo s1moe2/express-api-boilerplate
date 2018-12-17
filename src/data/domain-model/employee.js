@@ -4,35 +4,35 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.BIGINT,
       allowNull: false,
       autoIncrement: true,
-      primaryKey: true
+      primaryKey: true,
     },
     name: {
       type: DataTypes.STRING(128),
-      allowNull: false
+      allowNull: false,
     },
     companyID: {
       type: DataTypes.BIGINT,
-      allowNull: false
+      allowNull: false,
     },
     userID: {
       type: DataTypes.BIGINT,
-      allowNull: true
-    }
+      allowNull: true,
+    },
   })
 
   // ====================== Associations
   Employee.associate = (models) => {
     Employee.belongsTo(models.Company, {
-      foreignKey: 'companyID'
+      foreignKey: 'companyID',
     })
 
     Employee.belongsTo(models.User, {
-      foreignKey: 'userID'
+      foreignKey: 'userID',
     })
 
     Employee.belongsToMany(models.Skill, {
       through: models.EmployeeSkill,
-      foreignKey: 'dmployeeID'
+      foreignKey: 'dmployeeID',
     })
   }
 

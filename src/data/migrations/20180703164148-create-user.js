@@ -5,50 +5,50 @@ module.exports = {
         type: DataTypes.BIGINT,
         allowNull: false,
         autoIncrement: true,
-        primaryKey: true
+        primaryKey: true,
       },
       email: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true
+        unique: true,
       },
       firstName: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: true,
       },
       lastName: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: true,
       },
       password: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
       },
       isConfirmed: {
-        type: DataTypes.BOOLEAN
+        type: DataTypes.BOOLEAN,
       },
       confirmationToken: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: true,
       },
       recoveryToken: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: true,
       },
       createdAt: {
         allowNull: false,
-        type: DataTypes.DATE
+        type: DataTypes.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: DataTypes.DATE
+        type: DataTypes.DATE,
       },
       deletedAt: {
-        type: DataTypes.DATE
-      }
+        type: DataTypes.DATE,
+      },
     })
   },
   down: function (queryInterface, DataTypes) {
     return queryInterface.dropTable('Users')
-  }
+  },
 }

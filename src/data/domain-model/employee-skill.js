@@ -4,25 +4,25 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.BIGINT,
       allowNull: false,
       autoIncrement: true,
-      primaryKey: true
+      primaryKey: true,
     },
     employeeID: {
       type: DataTypes.BIGINT,
-      allowNull: false
+      allowNull: false,
     },
     skillID: {
       type: DataTypes.BIGINT,
-      allowNull: false
-    }
+      allowNull: false,
+    },
   })
 
   // ====================== Associations
   EmployeeSkill.associate = (models) => {
     EmployeeSkill.belongsTo(models.Employee, {
-      foreignKey: 'employeeID'
+      foreignKey: 'employeeID',
     })
     EmployeeSkill.belongsTo(models.Skill, {
-      foreignKey: 'skillID'
+      foreignKey: 'skillID',
     })
   }
 
