@@ -19,7 +19,7 @@ function sendSingleEmail (template, recipient, substitutions) {
 }
 
 function sendSignupConfirmationEmail (user, token) {
-  if (!process.env.MAILER_ENABLED) {
+  if (process.env.MAILER_ENABLED === '0' || process.env.MAILER_ENABLED === 'false') {
     return true
   }
 
