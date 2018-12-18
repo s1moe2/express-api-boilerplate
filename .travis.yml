@@ -7,5 +7,6 @@ before_script:
   - cp src/config/config.js.travis src/config/config.js
   - psql -c 'create database api_test;' -U postgres
 script:
+  - npm run migrate
   - npm run coverage-rep
   - codecov

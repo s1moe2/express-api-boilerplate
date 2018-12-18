@@ -10,9 +10,10 @@
     "pretest": "NODE_ENV=test sequelize db:migrate",
     "test": "NODE_ENV=test mocha -r chai/register-should --recursive --exit",
     "start": "node ./src/bin/server.js",
-    "coverage": "NODE_ENV=test nyc --reporter=html mocha -r chai/register-should --recursive --exit",
-    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls",
-    "coverage-rep": "NODE_ENV=test nyc --reporter=text-lcov > coverage.lcov mocha -r chai/register-should --recursive --exit && codecov"
+    "coverage": "NODE_ENV=test nyc --reporter=lcov mocha -r chai/register-should --recursive --exit",
+    "report": "NODE_ENV=test nyc report",
+    "coverage-rep": "NODE_ENV=test nyc --reporter=text-lcov > coverage.lcov mocha -r chai/register-should --recursive --exit",
+    "migrate": "sequelize db:migrate"
   },
   "dependencies": {
     "app-root-path": "2.1.0",
