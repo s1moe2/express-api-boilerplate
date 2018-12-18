@@ -1,14 +1,13 @@
-const HttpErrors = require('http-errors')
 const express = require('express')
 require('express-async-errors')
 const logger = require('morgan')
 const helmet = require('helmet')
 const compression = require('compression')
 const cors = require('cors')
-const passportConfig = require('./middleware/auth/passport-config')
+const passportConfig = require('./middleware/auth/passport')
 const passport = require('passport')
 const routes = require('./routes')
-const exceptions = require('./util/exceptions')
+const Exceptions = require('./util/exceptions')
 
 const app = express()
 
@@ -35,12 +34,12 @@ app.use('/', routes)
 
 // catch 404
 app.use((req, res) => {
-  res.apiError(new HttpErrors.NotFound())
+  res.apiError(new Exceptions.RouteNotFoundException())
 })
 
 // error handler
 app.use((err, req, res, next) => {
-  if (err instanceof exceptions.AppException) {
+  if (err instanceof Exceptions.AppException) {
     res.apiError(err)
   }
 
@@ -48,7 +47,7 @@ app.use((err, req, res, next) => {
   res.locals.message = err.message
   res.locals.error = req.app.get('env') === 'development' ? err : {}
 
-  res.apiError(new HttpErrors.Internal(err.status || 500, err.message))
+  res.apiError(new Exceptions.AppException(err.message, err.status || 500))
 })
 
 module.exports = app

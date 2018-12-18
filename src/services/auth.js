@@ -1,7 +1,5 @@
 const requireRoot = require('app-root-path').require
 const jwt = require('jsonwebtoken')
-const orm = requireRoot('/src/data/domain-model')
-const Op = require('sequelize').Op
 const Exceptions = requireRoot('/src/util/exceptions')
 
 const mailer = require('./mailer')
@@ -22,7 +20,7 @@ const authenticate = async (email, password) => {
 }
 
 const sendConfirmation = async (user) => {
-  const confirmToken = generateToken(user, 2)
+  const confirmToken = generateToken(user)
   try {
     if (await mailer.sendSignupConfirmationEmail(user, confirmToken)) {
       user.confirmationToken = confirmToken
@@ -36,30 +34,25 @@ const sendConfirmation = async (user) => {
 
 const checkConfirmationToken = async (token) => {
   try {
-    jwt.verify(token, 'wrong-secret')
+    jwt.verify(token, process.env.JWT_SECRET)
   } catch (err) {
     throw new Exceptions.InvalidTokenException()
   }
 
-  const user = await orm.User.findOne({
-    where: {
-      confirmationToken: {
-        [Op.eq]: token,
-      },
-    },
-  })
+  const user = await users.findByConfirmToken(token)
 
   if (user) {
     user.confirmationToken = null
     user.isConfirmed = true
-    await user.save()
-    return true
+    return user.save()
   }
 
   throw new Exceptions.RecordNotFoundException()
 }
 
-const generateToken = (user, ttl) => {
+const generateToken = (user) => {
+  const ttl = process.env.JWT_TTL ? process.env.JWT_TTL : 6
+
   return jwt.sign({ _id: user.id }, process.env.JWT_SECRET, {
     expiresIn: `${ttl}h`,
   })

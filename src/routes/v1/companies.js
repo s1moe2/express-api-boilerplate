@@ -2,7 +2,7 @@ const requireRoot = require('app-root-path').require
 const express = require('express')
 const router = express.Router()
 
-const { isAuthenticated } = requireRoot('/src/middleware/auth/passport-config')
+const { isAuthenticated } = requireRoot('/src/middleware/auth/passport')
 const { companies } = requireRoot('/src/controllers')
 
 router.get('/', isAuthenticated, companies.list)

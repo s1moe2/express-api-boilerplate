@@ -17,6 +17,16 @@ const findByEmail = (email) => {
   })
 }
 
+const findByConfirmToken = (token) => {
+  return orm.User.findOne({
+    where: {
+      confirmationToken: {
+        [Op.eq]: token,
+      },
+    },
+  })
+}
+
 const createUser = async (newUser) => {
   let user = await findByEmail(newUser.email)
   if (user) {
@@ -34,5 +44,6 @@ const createUser = async (newUser) => {
 module.exports = {
   findByID,
   findByEmail,
+  findByConfirmToken,
   createUser,
 }

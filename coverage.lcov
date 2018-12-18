@@ -243,7 +243,7 @@ BRF:9
 BRH:0
 end_of_record
 TN:
-SF:/Users/cloudoki/dev/opensource/express-api-boilerplate/src/middleware/auth/passport-config.js
+SF:/Users/cloudoki/dev/opensource/express-api-boilerplate/src/middleware/auth/passport.js
 FN:6,(anonymous_0)
 FN:10,(anonymous_1)
 FN:12,(anonymous_2)

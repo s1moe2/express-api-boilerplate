@@ -13,55 +13,53 @@ const { users } = requireRoot('/src/data/repositories')
  */
 
 const signin = async (req, res, next) => {
-  return new Promise(async (resolve, reject) => {
-    const errors = validationResult(req)
-    if (!errors.isEmpty()) {
-      return res.apiError(new Exceptions.InvalidParametersException({ errors: errors.array() }))
-    }
+  const errors = validationResult(req)
+  if (!errors.isEmpty()) {
+    return res.apiError(new Exceptions.InvalidParametersException({ errors: errors.array() }))
+  }
 
-    try {
-      const user = await auth.authenticate(req.body.email, req.body.password)
+  try {
+    const user = await auth.authenticate(req.body.email, req.body.password)
 
-      // if user is found and password is right create a token
-      const token = auth.generateToken(user, process.env.JWT_TTL)
+    // if user is found and password is right create a token
+    const token = auth.generateToken(user)
 
-      // return the token
-      return res.apiSuccess({ token: `Bearer ${token}` })
-    } catch (err) {
-      return res.apiError(err)
-    }
-  })
+    // return the token
+    return res.apiSuccess({ token: `Bearer ${token}` })
+  } catch (err) {
+    return res.apiError(err)
+  }
 }
 
-const signup = (req, res, next) => {
-  return new Promise(async (resolve, reject) => {
-    const errors = validationResult(req)
-    if (!errors.isEmpty()) {
-      return res.apiError(new Exceptions.InvalidParametersException({ errors: errors.array() }))
-    }
+const signup = async (req, res, next) => {
+  const errors = validationResult(req)
+  if (!errors.isEmpty()) {
+    return res.apiError(new Exceptions.InvalidParametersException({ errors: errors.array() }))
+  }
 
-    try {
-      const user = await users.createUser({
-        email: req.body.email,
-        firstName: req.body.firstName,
-        lastName: req.body.lastName,
-        password: req.body.password,
-      })
+  try {
+    const user = await users.createUser({
+      email: req.body.email,
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      password: req.body.password,
+    })
 
-      try {
-        await auth.sendConfirmation(user)
-        return res.apiSuccess('Successful created new user.', HttpStatus.CREATED)
-      } catch (err) {
-        return res.apiError(err)
-      }
-    } catch (err) {
-      return res.apiError(err)
-    }
-  })
+    await auth.sendConfirmation(user)
+    return res.apiSuccess('Successful created new user.', HttpStatus.CREATED)
+  } catch (err) {
+    return res.apiError(err)
+  }
 }
 
 const confirm = async (req, res, next) => {
-  return auth.checkConfirmationToken(req.query.token)
+  const confirmed = await auth.checkConfirmationToken(req.query.token)
+
+  if (confirmed) {
+    return res.apiSuccess('Successful confirmed user registration.', HttpStatus.OK)
+  }
+
+  return res.apiError('Could not confirm the user.', HttpStatus.BAD_REQUEST)
 }
 
 module.exports = {

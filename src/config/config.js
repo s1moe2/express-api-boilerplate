@@ -10,8 +10,11 @@ const commonConfig = {
   operatorsAliases: false,
 }
 
+const testConfig = Object.assign({}, commonConfig)
+testConfig.database = process.env.DB_NAME_TEST
+
 module.exports = {
   development: commonConfig,
-  test: commonConfig,
+  test: testConfig,
   production: commonConfig,
 }
