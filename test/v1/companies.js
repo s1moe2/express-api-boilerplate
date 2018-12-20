@@ -68,16 +68,6 @@ describe('Companies endpoint tests', () => {
       })
   })
 
-  it('should reject invalid request', (done) => {
-    chai.request(app)
-      .get('/v1/companies/abc')
-      .set('Authorization', token)
-      .end((err, res) => {
-        expect(res.status).to.equal(400)
-        done()
-      })
-  })
-
   it('should not create another company with the same name', (done) => {
     chai.request(app)
       .post('/v1/companies')

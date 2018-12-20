@@ -1,5 +1,6 @@
 const requireRoot = require('app-root-path').require
 const Exceptions = requireRoot('/src/util/exceptions')
+const HttpStatus = require('http-status-codes')
 const { companies } = requireRoot('/src/data/repositories')
 
 const list = async (req, res, next) => {
@@ -8,7 +9,7 @@ const list = async (req, res, next) => {
 }
 
 const getByID = async (req, res, next) => {
-  const companyID = req.query.id
+  const companyID = req.params.id
 
   const company = await companies.findByID(companyID)
   if (!company) {
@@ -17,10 +18,14 @@ const getByID = async (req, res, next) => {
   return res.apiSuccess(company)
 }
 
-const create = (req, res, next) => {
+const create = async (req, res, next) => {
   const name = req.body.name
 
-  return companies.createCompany(name)
+  const newCompany = await companies.createCompany(name)
+  if (!newCompany) {
+    throw new Exceptions.RecordCreationException()
+  }
+  return res.apiSuccess(newCompany, HttpStatus.CREATED)
 }
 
 const update = (req, res, next) => {
