@@ -8,7 +8,7 @@
     "dev": "NODE_ENV=development nodemon ./src/bin/server.js",
     "dev-hard": "NODE_ENV=development sequelize db:drop && sequelize db:create && sequelize db:migrate && DEBUG=* nodemon ./src/bin/server.js",
     "pretest": "NODE_ENV=test sequelize db:migrate",
-    "test": "NODE_ENV=test mocha -r chai/register-should --recursive --exit",
+    "test": "NODE_ENV=test nyc --reporter=text --reporter=html mocha --exit",
     "start": "node ./src/bin/server.js",
     "coverage": "NODE_ENV=test nyc --reporter=lcov mocha -r chai/register-should --recursive --exit",
     "report": "NODE_ENV=test nyc report",

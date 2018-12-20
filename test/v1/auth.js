@@ -7,11 +7,10 @@ const app = require('../../src/app')
 
 chai.use(chaiHttp)
 
-//process.env.MAILER_ENABLED = false
 
 describe('Authentication endpoint tests', () => {
 
-  before(function(done) {
+  before(function (done) {
     orm.sequelize.sync({ force: true }).then(() => { done() })
   })
 

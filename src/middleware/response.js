@@ -14,7 +14,6 @@ module.exports = (req, res, next) => {
   }
 
   res.apiError = (err, fields = undefined) => {
-    console.error(err)
     const stackTrace = (req.app.get('env') === 'development' || req.app.get('env') === 'test') ? err.stack : undefined
 
     return res.status(err.status).json(getFailJson(err, fields, stackTrace))

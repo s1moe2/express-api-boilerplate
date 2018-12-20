@@ -14,7 +14,7 @@ const getAllCompanies = () => {
 }
 
 const findByName = (name) => {
-  return orm.Company.find({
+  return orm.Company.findOne({
     where: {
       companyName: {
         [Op.eq]: name,
