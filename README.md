@@ -5,40 +5,39 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
 
-# Simple Node.js+Express+Sequelize API server.js boilerplate
+# Node.js+Express+Sequelize API server.js boilerplate
 
-### Getting Started
-Before anything else you need to create a database and update the environment variables in the `.env` file (you can copy-paste `.env.example` and edit as needed).
+## Getting Started
+(Note: For the database I used PostgreSQL but you can easily use any flavour accepted by Sequelize by changing the env variable `DB_DIALECT`.)
 
-For the database I used PostgreSQL but you can easily use any flavour accepted by Sequelize by changing the env variable `DB_DIALECT`.
+1. Create a database and update the environment variables in the `.env` file (copy-paste `.env.example` and edit as needed).
+3. `npm i`
+2. `npm run migrate`
 
 
-### NPM Scrips
+## NPM Scrips
 ```bash
-# Runs migrations and starts with nodemon (showing a lot of debug info)
+# Starts the server with nodemon
 npm run dev
+
+# Drops and creates the database, runs migrations and starts the server with nodemon
+npm run dev-hard
 
 # Runs migrations and then the tests in `./test`
 npm test
 
-# Starts the app in production mode (well, not exactly production ready but you get the idea)
+# Starts the app in production mode
 npm start
 
 # Runs tests and generates coverage report
 npm run coverage
+
+# Displays previously generated coverage report
+npm run report
 ```
 
-### Travis-CI integration
-There's a configuration file for the integration with Travis if you want to use it.
 
-Note that it's using a PostgreSQL (in Travis) to run the tests. If you want to use any other make sure you change the file.
-
-Coveralls was not updating the status after each build. Moved to `codecov.io` which doesn't need additional setup.
-~~Additionally, there's an integration with Coveralls. If you want to use it, you'll need to enter your Coveralls token in `.coveralls.yml` (again, copy-pase the existing sample).~~
-
-
-
-### Project structure
+## Project structure
 ```
 ├── coverage  				(coverage report results)
 ├── src						(source code)
@@ -47,22 +46,13 @@ Coveralls was not updating the status after each build. Moved to `codecov.io` wh
 │   ├── controllers			(handlers/business-logic)
 │   ├── data				(data/database related pieces)
 │   │   ├── domain-model	(orm: sequelize models)
-│   │   └── migrations		(database migration files)
+│   │   ├── migrations		(database migration files)
+│   │   └── repositories	(data access layer)
 │   ├── middleware			(custom express middlewares)
-│   │   └── auth			(auth/passport middlewares)
 │   ├── routes				(all routing)
 │   │   └── v1				(API v1 routes)
+│   ├── services			(custom service modules)
 │   └── util				(utility classes/functions/modules)
 └── test					(all tests)
-    └── unit-tests
+    └── v1					(integration tests for API v1)
 ```
-
-### Authentication
-Implemented with Passport.js JWT strategy. Key files to this are in `/src/middleware/auth`.
-- _passport-config_ => Passport strategy configuration (simply taking the user ID from the token's payload and searching for the user with that ID in the database). JWT secret and token TTL/expiration time are configured as environment variables.
-- _passport-helpers_ => Handlers for sign-in/sign-out, authentication check and other related utilities.
-
-
-
-### Notes
-This work is currently in progress. Contributions, opinions and advice are more than welcome. I'm doing this to (possibly) use on a personal project but mostly for learning purposes.
