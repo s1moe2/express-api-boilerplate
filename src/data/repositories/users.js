@@ -17,10 +17,20 @@ const findByEmail = (email) => {
   })
 }
 
-const findByConfirmToken = (token) => {
+const findByConfirmationToken = (token) => {
   return orm.User.findOne({
     where: {
       confirmationToken: {
+        [Op.eq]: token,
+      },
+    },
+  })
+}
+
+const findByRecoveryToken = (token) => {
+  return orm.User.findOne({
+    where: {
+      recoveryToken: {
         [Op.eq]: token,
       },
     },
@@ -44,6 +54,7 @@ const createUser = async (newUser) => {
 module.exports = {
   findByID,
   findByEmail,
-  findByConfirmToken,
+  findByConfirmationToken,
+  findByRecoveryToken,
   createUser,
 }

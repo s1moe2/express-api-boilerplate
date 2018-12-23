@@ -86,6 +86,17 @@ describe('Authentication endpoint tests', () => {
       })
   })
 
+  it('should not confirm an invalid signup', (done) => {
+    chai.request(app)
+      .get('/v1/auth/confirm?t=a8if6udhks')
+      .end((err, res) => {
+        expect(err).to.be.null
+        expect(res.redirects.length).to.equal(0)
+        expect(res.status).to.equal(400)
+        done()
+      })
+  })
+
   it('should login successfully and receive token', (done) => {
     chai.request(app)
       .post('/v1/auth/signin')
@@ -99,6 +110,36 @@ describe('Authentication endpoint tests', () => {
         expect(res.status).to.equal(200)
         expect(res.type).to.equal('application/json')
         expect(res.body.token).to.not.be.empty
+        done()
+      })
+  })
+
+  it('should "send" a recovery token', (done) => {
+    chai.request(app)
+      .post('/v1/auth/recover')
+      .send({
+        email: 'rick@sanchez.xx',
+      })
+      .end((err, res) => {
+        expect(err).to.be.null
+        expect(res.redirects.length).to.equal(0)
+        expect(res.status).to.equal(200)
+        done()
+      })
+  })
+
+  it('should not reset the user\' password', (done) => {
+    chai.request(app)
+      .post('/v1/auth/recover')
+      .send({
+        token: 'idontknowthetoken',
+        password: 'validpassword',
+        confirmPassword: 'validpassword',
+      })
+      .end((err, res) => {
+        expect(err).to.be.null
+        expect(res.redirects.length).to.equal(0)
+        expect(res.status).to.equal(400)
         done()
       })
   })

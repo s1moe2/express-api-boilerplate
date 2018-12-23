@@ -50,6 +50,12 @@ class InvalidParametersException extends AppException {
   }
 }
 
+class InvalidTokenException extends AppException {
+  constructor (message) {
+    super(message || 'Invalid Token Exception', HttpStatus.BAD_REQUEST)
+  }
+}
+
 module.exports = {
   AppException,
   RecordAlreadyExistsException,
@@ -58,4 +64,5 @@ module.exports = {
   RecordCreationException,
   AuthenticationException,
   InvalidParametersException,
+  InvalidTokenException,
 }

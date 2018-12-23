@@ -6,17 +6,15 @@ const Exceptions = requireRoot('/src/util/exceptions')
 const { auth } = requireRoot('/src/services')
 const { users } = requireRoot('/src/data/repositories')
 
-/**
- * Sign in using email and password.
- * req, res, next params are all required this time (passport requires them). This is an exceptional
- * case.
- */
-
-const signin = async (req, res, next) => {
+const validateRequest = (req, res) => {
   const errors = validationResult(req)
   if (!errors.isEmpty()) {
     return res.apiError(new Exceptions.InvalidParametersException({ errors: errors.array() }))
   }
+}
+
+const signin = async (req, res, next) => {
+  validateRequest(req, res)
 
   try {
     const user = await auth.authenticate(req.body.email, req.body.password)
@@ -32,10 +30,7 @@ const signin = async (req, res, next) => {
 }
 
 const signup = async (req, res, next) => {
-  const errors = validationResult(req)
-  if (!errors.isEmpty()) {
-    return res.apiError(new Exceptions.InvalidParametersException({ errors: errors.array() }))
-  }
+  validateRequest(req, res)
 
   try {
     const user = await users.createUser({
@@ -52,8 +47,10 @@ const signup = async (req, res, next) => {
   }
 }
 
-const confirm = async (req, res, next) => {
-  const confirmed = await auth.checkConfirmationToken(req.query.token)
+const confirmSignup = async (req, res, next) => {
+  validateRequest(req, res)
+
+  const confirmed = await auth.confirmUserSignup(req.query.token)
 
   if (confirmed) {
     return res.apiSuccess('Successful confirmed user registration.', HttpStatus.OK)
@@ -62,8 +59,45 @@ const confirm = async (req, res, next) => {
   return res.apiError('Could not confirm the user.', HttpStatus.BAD_REQUEST)
 }
 
+const recover = async (req, res, next) => {
+  validateRequest(req, res)
+
+  try {
+    const user = await users.findByEmail(req.body.email)
+    if (!user) {
+      return res.apiError(new Exceptions.RecordNotFoundException())
+    }
+
+    await auth.sendRecoveryToken(user)
+    return res.apiSuccess('Successfully sent recovery token.', HttpStatus.OK)
+  } catch (err) {
+    return res.apiError(new Exceptions.RecordNotFoundException())
+  }
+}
+
+const resetPassword = async (req, res, next) => {
+  validateRequest(req, res)
+
+  try {
+    const user = await auth.checkRecoveryToken(req.body.token)
+    if (!user) {
+      return res.apiError(new Exceptions.RecordNotFoundException())
+    }
+
+    user.recoveryToken = null
+    user.password = req.body.password
+    await user.save()
+
+    return res.apiSuccess('Password successfully updated.', HttpStatus.OK)
+  } catch (err) {
+    return res.apiError(new Exceptions.RecordNotFoundException())
+  }
+}
+
 module.exports = {
   signin,
   signup,
-  confirm,
+  confirmSignup,
+  recover,
+  resetPassword,
 }

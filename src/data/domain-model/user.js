@@ -1,5 +1,4 @@
-const bcrypt = require('bcrypt')
-const bcryptP = require('bcrypt-promise')
+const bcrypt = require('bcrypt-promise')
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
@@ -44,11 +43,8 @@ module.exports = (sequelize, DataTypes) => {
   // ====================== Hooks
   User.beforeSave(async (user, options) => {
     if (user.changed('password') || user.changed('confirmationToken') || user.changed('recoveryToken')) {
-      let salt, hash
-      salt = await bcrypt.genSalt(12)
-      hash = await bcryptP.hash(user.password, salt)
-
-      user.password = hash
+      const salt = await bcrypt.genSalt(12)
+      user.password = await bcrypt.hash(user.password, salt)
     }
   })
 
@@ -65,15 +61,15 @@ module.exports = (sequelize, DataTypes) => {
   }
 
   User.prototype.comparePassword = function (password) {
-    return bcryptP.compare(password, this.password)
+    return bcrypt.compare(password, this.password)
   }
 
-  User.prototype.compareConfirmationToken = async function (token) {
-    return bcryptP.compare(token, this.confirmationToken)
+  User.prototype.compareConfirmationToken = function (token) {
+    return bcrypt.compare(token, this.confirmationToken)
   }
 
-  User.prototype.compareRecoveryToken = async function (token) {
-    return bcryptP.compare(token, this.recoveryToken)
+  User.prototype.compareRecoveryToken = function (token) {
+    return bcrypt.compare(token, this.recoveryToken)
   }
 
   return User
