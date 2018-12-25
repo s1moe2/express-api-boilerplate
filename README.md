@@ -37,6 +37,16 @@ npm run report
 ```
 
 
+## Design Principles
+
+This application has a multi-layer architecture composed of: routes, controllers, services and repositories.
+
+* **Routes**: The routes layer could be seen as API definition, containing only the enpoints, validation rules and the controller that handles the workload. No business logic or data access is done on any route.
+* **Controllers**: Controllers are responsible for request/response handling, performing validations and executing most of the business logic, preferably in a declarative style. This means that, although the controller is aware if the logic, it should use services/repositories/utils to actually do the work.
+* **Services**: Modular components that are responsible for something specific or generic such as mailing. One can also think of those as services that could be detatched from the server sometime in the future.
+* **Repositories**: Repositories are used to centralize data access logic and wrap the ORM, isolating it from the rest of the application.
+
+
 ## Project structure
 ```
 ├── coverage  				(coverage report results)
