@@ -2,7 +2,6 @@ const chai = require('chai')
 const chaiHttp = require('chai-http')
 const expect = chai.expect
 
-const orm = require('../../src/data/domain-model')
 const app = require('../../src/app')
 
 chai.use(chaiHttp)
@@ -43,6 +42,19 @@ describe('Companies endpoint tests', () => {
       .end((err, res) => {
         console.error(err)
         expect(res.status).to.equal(201)
+        done()
+      })
+  })
+
+  it('should fail to add a new company', (done) => {
+    console.log(token)
+    chai.request(app)
+      .post('/v1/companies')
+      .set('Authorization', token)
+      .send({ 'name': 12345 })
+      .end((err, res) => {
+        console.error(err)
+        expect(res.status).to.equal(500)
         done()
       })
   })

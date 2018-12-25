@@ -20,11 +20,8 @@ const getByID = async (req, res, next) => {
 
 const create = async (req, res, next) => {
   const name = req.body.name
-
   const newCompany = await companies.createCompany(name)
-  if (!newCompany) {
-    throw new Exceptions.RecordCreationException()
-  }
+
   return res.apiSuccess(newCompany, HttpStatus.CREATED)
 }
 
