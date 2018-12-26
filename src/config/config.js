@@ -8,6 +8,7 @@ const commonConfig = {
   username: process.env.DB_USER || 'postgres',
   password: process.env.DB_PASSWORD || '',
   operatorsAliases: false,
+  logging: process.env.DB_LOGGING || false,
 }
 
 const testConfig = Object.assign({}, commonConfig)

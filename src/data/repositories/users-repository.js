@@ -44,12 +44,7 @@ const UsersRepository = (orm) => {
       throw new Exceptions.RecordAlreadyExistsException()
     }
 
-    user = await orm.User.create(newUser)
-    if (!user) {
-      throw new Exceptions.RecordCreationException()
-    }
-
-    return user
+    return orm.User.create(newUser)
   }
 
   return {

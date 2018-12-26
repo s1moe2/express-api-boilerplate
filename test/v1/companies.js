@@ -34,7 +34,6 @@ describe('Companies endpoint tests', () => {
   })
 
   it('should add a new company', (done) => {
-    console.log(token)
     chai.request(app)
       .post('/v1/companies')
       .set('Authorization', token)
@@ -47,7 +46,6 @@ describe('Companies endpoint tests', () => {
   })
 
   it('should fail to add a new company', (done) => {
-    console.log(token)
     chai.request(app)
       .post('/v1/companies')
       .set('Authorization', token)
