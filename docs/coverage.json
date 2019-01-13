@@ -1,0 +1,270 @@
+{
+  "coverage": "4.37%",
+  "expectCount": 137,
+  "actualCount": 6,
+  "files": {
+    "src/app.js": {
+      "expectCount": 10,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ]
+    },
+    "src/bin/server.js": {
+      "expectCount": 8,
+      "actualCount": 6,
+      "undocumentLines": [
+        11,
+        12
+      ]
+    },
+    "src/config/config.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        14
+      ]
+    },
+    "src/controllers/auth.js": {
+      "expectCount": 12,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        16,
+        32,
+        50,
+        62,
+        78
+      ]
+    },
+    "src/controllers/companies.js": {
+      "expectCount": 8,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        11,
+        21,
+        28
+      ]
+    },
+    "src/controllers/users.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        5,
+        14
+      ]
+    },
+    "src/data/domain-model/index.js": {
+      "expectCount": 9,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ]
+    },
+    "src/data/domain-model/user.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/data/repositories/companies-repository.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    "src/data/repositories/index.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        4,
+        5
+      ]
+    },
+    "src/data/repositories/users-repository.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    "src/middleware/passport.js": {
+      "expectCount": 8,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        11,
+        39
+      ]
+    },
+    "src/middleware/response.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        3
+      ]
+    },
+    "src/routes/index.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2
+      ]
+    },
+    "src/routes/v1/auth.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        8
+      ]
+    },
+    "src/routes/v1/companies.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ]
+    },
+    "src/routes/v1/index.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "src/routes/v1/users.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        3
+      ]
+    },
+    "src/services/auth.js": {
+      "expectCount": 11,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        22,
+        35,
+        53,
+        61,
+        76
+      ]
+    },
+    "src/services/index.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2
+      ]
+    },
+    "src/services/mailer.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        3,
+        7,
+        8,
+        10,
+        22,
+        41
+      ]
+    },
+    "src/util/exceptions.js": {
+      "expectCount": 19,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        3,
+        4,
+        9,
+        10,
+        17,
+        18,
+        23,
+        24,
+        29,
+        30,
+        35,
+        36,
+        41,
+        42,
+        47,
+        48,
+        53,
+        54
+      ]
+    }
+  }
+}

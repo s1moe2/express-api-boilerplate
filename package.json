@@ -1,9 +1,12 @@
 {
   "name": "api-boilerplate",
   "description": "Simple Node.js+Express+Sequelize API server.js boilerplate",
+  "repository": "https://github.com/s1moe2/express-api-boilerplate",
   "version": "1.0.0",
   "author": "Diogo Simões",
+  "license": "MIT",
   "scripts": {
+    "doc": "esdoc",
     "lint": "eslint src/ --ext .js",
     "dev": "NODE_ENV=development nodemon ./src/bin/server.js",
     "dev-hard": "NODE_ENV=development sequelize db:drop && sequelize db:create && sequelize db:migrate && DEBUG=* nodemon ./src/bin/server.js",
@@ -16,7 +19,7 @@
   },
   "dependencies": {
     "app-root-path": "^2.1.0",
-    "bcrypt": "3.0.2",
+    "bcrypt": "3.0.3",
     "bcrypt-promise": "2.0.0",
     "compression": "^1.7.3",
     "cors": "^2.8.5",
@@ -41,6 +44,8 @@
     "codecov": "^3.1.0",
     "coveralls": "^3.0.2",
     "dotenv": "^6.2.0",
+    "esdoc": "^1.1.0",
+    "esdoc-standard-plugin": "^1.0.0",
     "eslint": "~5.9.0",
     "eslint-config-standard": "~12.0.0",
     "eslint-plugin-import": "~2.14.0",

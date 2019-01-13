@@ -39,7 +39,6 @@ describe('Companies endpoint tests', () => {
       .set('Authorization', token)
       .send({ 'name': 'Multiverse Coders' })
       .end((err, res) => {
-        console.error(err)
         expect(res.status).to.equal(201)
         done()
       })
@@ -51,7 +50,6 @@ describe('Companies endpoint tests', () => {
       .set('Authorization', token)
       .send({ 'name': 12345 })
       .end((err, res) => {
-        console.error(err)
         expect(res.status).to.equal(500)
         done()
       })

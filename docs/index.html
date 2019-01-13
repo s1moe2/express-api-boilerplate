@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | api-boilerplate</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Simple Node.js+Express+Sequelize API server.js boilerplate"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="api-boilerplate"><meta property="twitter:description" content="Simple Node.js+Express+Sequelize API server.js boilerplate"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><p><a href="https://travis-ci.org/s1moe2/express-api-boilerplate"><img src="https://travis-ci.org/s1moe2/express-api-boilerplate.svg?branch=master" alt="Build Status"></a>
+<a href="https://codecov.io/gh/s1moe2/express-api-boilerplate"><img src="https://codecov.io/gh/s1moe2/express-api-boilerplate/branch/master/graph/badge.svg" alt="codecov"></a>
+<a href="https://snyk.io/test/github/s1moe2/express-api-boilerplate?targetFile=package.json"><img src="https://snyk.io/test/github/s1moe2/express-api-boilerplate/badge.svg?targetFile=package.json" alt="Known Vulnerabilities"></a>
+<a href="http://standardjs.com"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg" alt="js-standard-style"></a></p>
+<h1 id="node-js-express-sequelize-api-server-js-boilerplate">Node.js+Express+Sequelize API server.js boilerplate</h1><h2 id="getting-started">Getting Started</h2><p>(Note: For the database I used PostgreSQL but you can easily use any flavour accepted by Sequelize by changing the env variable <code>DB_DIALECT</code>.)</p>
+<ol>
+<li>Create a database and update the environment variables in the <code>.env</code> file (copy-paste <code>.env.example</code> and edit as needed).</li>
+<li><code>npm i</code></li>
+<li><code>npm run migrate</code></li>
+</ol>
+<h2 id="npm-scrips">NPM Scrips</h2><pre><code class="lang-bash"><code class="source-code prettyprint"># Starts the server with nodemon
+npm run dev
+
+# Drops and creates the database, runs migrations and starts the server with nodemon
+npm run dev-hard
+
+# Runs migrations and then the tests in `./test`
+npm test
+
+# Starts the app in production mode
+npm start
+
+# Runs tests and generates coverage report
+npm run coverage
+
+# Displays previously generated coverage report
+npm run report</code>
+</code></pre>
+<h2 id="design-principles">Design Principles</h2><p>This application has a multi-layer architecture composed of: routes, controllers, services and repositories.</p>
+<ul>
+<li><strong>Routes</strong>: The routes layer could be seen as API definition, containing only the enpoints, validation rules and the controller that handles the workload. No business logic or data access is done on any route.</li>
+<li><strong>Controllers</strong>: Controllers are responsible for request/response handling, performing validations and executing most of the business logic, preferably in a declarative style. This means that, although the controller is aware if the logic, it should use services/repositories/utils to actually do the work.</li>
+<li><strong>Services</strong>: Modular components that are responsible for something specific or generic such as mailing. One can also think of those as services that could be detatched from the server sometime in the future.</li>
+<li><strong>Repositories</strong>: Repositories are used to centralize data access logic and wrap the ORM, isolating it from the rest of the application.</li>
+</ul>
+<h2 id="project-structure">Project structure</h2><pre><code><code class="source-code prettyprint">&#x251C;&#x2500;&#x2500; coverage                  (coverage report results)
+&#x251C;&#x2500;&#x2500; src                        (source code)
+&#x2502;   &#x251C;&#x2500;&#x2500; bin                    (server startup scripts)
+&#x2502;   &#x251C;&#x2500;&#x2500; config                (configurations)
+&#x2502;   &#x251C;&#x2500;&#x2500; controllers            (handlers/business-logic)
+&#x2502;   &#x251C;&#x2500;&#x2500; data                (data/database related pieces)
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; domain-model    (orm: sequelize models)
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; migrations        (database migration files)
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; repositories    (data access layer)
+&#x2502;   &#x251C;&#x2500;&#x2500; middleware            (custom express middlewares)
+&#x2502;   &#x251C;&#x2500;&#x2500; routes                (all routing)
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; v1                (API v1 routes)
+&#x2502;   &#x251C;&#x2500;&#x2500; services            (custom service modules)
+&#x2502;   &#x2514;&#x2500;&#x2500; util                (utility classes/functions/modules)
+&#x2514;&#x2500;&#x2500; test                    (all tests)
+    &#x2514;&#x2500;&#x2500; v1                    (integration tests for API v1)</code>
+</code></pre></div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

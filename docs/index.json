@@ -1,0 +1,4171 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/app.js",
+    "content": "const express = require('express')\nrequire('express-async-errors')\nconst logger = require('morgan')\nconst helmet = require('helmet')\nconst compression = require('compression')\nconst cors = require('cors')\nconst passportConfig = require('./middleware/passport')\nconst passport = require('passport')\nconst routes = require('./routes')\nconst Exceptions = require('./util/exceptions')\n\nconst app = express()\n\n// middleware jungle\napp.use(compression())\napp.use(helmet())\nif (process.env.NODE_ENV !== 'test') {\n  app.use(logger('dev'))\n}\napp.use(express.json())\napp.use(express.urlencoded({ extended: true }))\napp.use(cors())\napp.use(require('./middleware/response'))\n\n// passport middleware\napp.use(passport.initialize())\napp.use(passport.session())\n\n// passport configuration & initialization\npassportConfig.init()\n\n// app routes\napp.use('/', routes)\n\n\n\n// catch 404\napp.use((req, res) => {\n  res.apiError(new Exceptions.RouteNotFoundException())\n})\n\n// error handler\napp.use((err, req, res, next) => {\n  if (err instanceof Exceptions.AppException) {\n    res.apiError(err)\n  }\n\n  // set locals, only providing error in development\n  res.locals.message = err.message\n  res.locals.error = req.app.get('env') === 'development' ? err : {}\n\n  res.apiError(new Exceptions.AppException(err.message, err.status || 500))\n})\n\nmodule.exports = app\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/app.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "variable",
+    "name": "logger",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~logger",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "helmet",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~helmet",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "variable",
+    "name": "compression",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~compression",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "variable",
+    "name": "cors",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~cors",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "variable",
+    "name": "passportConfig",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~passportConfig",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "variable",
+    "name": "passport",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~passport",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "variable",
+    "name": "routes",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~routes",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "variable",
+    "name": "Exceptions",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~Exceptions",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "variable",
+    "name": "app",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~app",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "file",
+    "name": "src/bin/server.js",
+    "content": "#!/usr/bin/env node\n\nif (process.env.NODE_ENV !== 'production') {\n  require('dotenv').load()\n}\n\n/**\n * Module dependencies.\n */\nconst app = require('../app')\nconst debug = require('debug')('app:server')\nconst http = require('http')\n\n/**\n * Normalize a port into a number, string, or false.\n */\nconst normalizePort = (val) => {\n  const port = parseInt(val, 10)\n\n  if (isNaN(port)) {\n    // named pipe\n    return val\n  }\n\n  if (port >= 0) {\n    // port number\n    return port\n  }\n\n  return false\n}\n\n/**\n * Event listener for HTTP server.js \"error\" event.\n */\nconst onError = (error) => {\n  if (error.syscall !== 'listen') {\n    throw error\n  }\n\n  const bind = typeof port === 'string'\n    ? 'Pipe ' + port\n    : 'Port ' + port\n\n  // handle specific listen errors with friendly messages\n  switch (error.code) {\n    case 'EACCES':\n      console.error(bind + ' requires elevated privileges')\n      process.exit(1)\n    case 'EADDRINUSE':\n      console.error(bind + ' is already in use')\n      process.exit(1)\n    default:\n      throw error\n  }\n}\n\n/**\n * Event listener for HTTP server.js \"listening\" event.\n */\nconst onListening = () => {\n  const addr = server.address()\n  const bind = typeof addr === 'string'\n    ? 'pipe ' + addr\n    : 'port ' + addr.port\n  debug('Listening on ' + bind)\n}\n\n\n/**\n * Get port from environment and store in Express.\n */\nconst port = normalizePort(process.env.PORT || '3000')\napp.set('port', port)\n\n/**\n * Create HTTP server.js.\n */\nconst server = http.createServer(app)\n\n/**\n * Listen on provided port, on all network interfaces.\n */\nserver.listen(port)\nserver.on('error', onError)\nserver.on('listening', onListening)\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/bin/server.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 60,
+    "kind": "variable",
+    "name": "app",
+    "memberof": "src/bin/server.js",
+    "static": true,
+    "longname": "src/bin/server.js~app",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/bin/server.js",
+    "importStyle": null,
+    "description": "Module dependencies.",
+    "lineNumber": 10,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "variable",
+    "name": "debug",
+    "memberof": "src/bin/server.js",
+    "static": true,
+    "longname": "src/bin/server.js~debug",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/bin/server.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "variable",
+    "name": "http",
+    "memberof": "src/bin/server.js",
+    "static": true,
+    "longname": "src/bin/server.js~http",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/bin/server.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "normalizePort",
+    "memberof": "src/bin/server.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/bin/server.js~normalizePort",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/bin/server.js",
+    "importStyle": null,
+    "description": "Normalize a port into a number, string, or false.",
+    "lineNumber": 17,
+    "params": [
+      {
+        "name": "val",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "onError",
+    "memberof": "src/bin/server.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/bin/server.js~onError",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/bin/server.js",
+    "importStyle": null,
+    "description": "Event listener for HTTP server.js \"error\" event.",
+    "lineNumber": 36,
+    "params": [
+      {
+        "name": "error",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "function",
+    "name": "onListening",
+    "memberof": "src/bin/server.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/bin/server.js~onListening",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/bin/server.js",
+    "importStyle": null,
+    "description": "Event listener for HTTP server.js \"listening\" event.",
+    "lineNumber": 61,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 66,
+    "kind": "variable",
+    "name": "port",
+    "memberof": "src/bin/server.js",
+    "static": true,
+    "longname": "src/bin/server.js~port",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/bin/server.js",
+    "importStyle": null,
+    "description": "Get port from environment and store in Express.",
+    "lineNumber": 73,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 67,
+    "kind": "variable",
+    "name": "server",
+    "memberof": "src/bin/server.js",
+    "static": true,
+    "longname": "src/bin/server.js~server",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/bin/server.js",
+    "importStyle": null,
+    "description": "Create HTTP server.js.",
+    "lineNumber": 79,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "file",
+    "name": "src/config/config.js",
+    "content": "require('dotenv').config()\n\nconst commonConfig = {\n  dialect: process.env.DB_DIALECT || 'postgres',\n  host: process.env.DB_HOST || 'localhost',\n  port: process.env.DB_PORT || 5432,\n  database: process.env.DB_NAME || '',\n  username: process.env.DB_USER || 'postgres',\n  password: process.env.DB_PASSWORD || '',\n  operatorsAliases: false,\n  logging: process.env.DB_LOGGING || false,\n}\n\nconst testConfig = Object.assign({}, commonConfig)\ntestConfig.database = process.env.DB_NAME_TEST\n\nmodule.exports = {\n  development: commonConfig,\n  test: testConfig,\n  production: commonConfig,\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/config/config.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 69,
+    "kind": "variable",
+    "name": "commonConfig",
+    "memberof": "src/config/config.js",
+    "static": true,
+    "longname": "src/config/config.js~commonConfig",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/config/config.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"dialect\": *, \"host\": *, \"port\": *, \"database\": *, \"username\": *, \"password\": *, \"operatorsAliases\": *, \"logging\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 70,
+    "kind": "variable",
+    "name": "testConfig",
+    "memberof": "src/config/config.js",
+    "static": true,
+    "longname": "src/config/config.js~testConfig",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/config/config.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "file",
+    "name": "src/controllers/auth.js",
+    "content": "const requireRoot = require('app-root-path').require\nconst HttpStatus = require('http-status-codes')\nconst { validationResult } = require('express-validator/check')\nconst Exceptions = requireRoot('/src/util/exceptions')\n\nconst { auth } = requireRoot('/src/services')\nconst { users } = requireRoot('/src/data/repositories')\n\nconst validateRequest = (req, res) => {\n  const errors = validationResult(req)\n  if (!errors.isEmpty()) {\n    return res.apiError(new Exceptions.InvalidParametersException({ errors: errors.array() }))\n  }\n}\n\nconst signin = async (req, res, next) => {\n  validateRequest(req, res)\n\n  try {\n    const user = await auth.authenticate(req.body.email, req.body.password)\n\n    // if user is found and password is right create a token\n    const token = auth.generateToken(user)\n\n    // return the token\n    return res.apiSuccess({ token: `Bearer ${token}` })\n  } catch (err) {\n    return res.apiError(err)\n  }\n}\n\nconst signup = async (req, res, next) => {\n  validateRequest(req, res)\n\n  try {\n    const user = await users.createUser({\n      email: req.body.email,\n      firstName: req.body.firstName,\n      lastName: req.body.lastName,\n      password: req.body.password,\n    })\n\n    await auth.sendConfirmation(user)\n    return res.apiSuccess('Successful created new user.', HttpStatus.CREATED)\n  } catch (err) {\n    return res.apiError(err)\n  }\n}\n\nconst confirmSignup = async (req, res, next) => {\n  validateRequest(req, res)\n\n  const confirmed = await auth.confirmUserSignup(req.query.token)\n\n  if (confirmed) {\n    return res.apiSuccess('Successful confirmed user registration.', HttpStatus.OK)\n  }\n\n  return res.apiError('Could not confirm the user.', HttpStatus.BAD_REQUEST)\n}\n\nconst recover = async (req, res, next) => {\n  validateRequest(req, res)\n\n  try {\n    const user = await users.findByEmail(req.body.email)\n    if (!user) {\n      return res.apiError(new Exceptions.RecordNotFoundException())\n    }\n\n    await auth.sendRecoveryToken(user)\n    return res.apiSuccess('Successfully sent recovery token.', HttpStatus.OK)\n  } catch (err) {\n    return res.apiError(new Exceptions.RecordNotFoundException())\n  }\n}\n\nconst resetPassword = async (req, res, next) => {\n  validateRequest(req, res)\n\n  try {\n    const user = await auth.checkRecoveryToken(req.body.token)\n    if (!user) {\n      return res.apiError(new Exceptions.RecordNotFoundException())\n    }\n\n    user.recoveryToken = null\n    user.password = req.body.password\n    await user.save()\n\n    return res.apiSuccess('Password successfully updated.', HttpStatus.OK)\n  } catch (err) {\n    return res.apiError(new Exceptions.RecordNotFoundException())\n  }\n}\n\nmodule.exports = {\n  signin,\n  signup,\n  confirmSignup,\n  recover,\n  resetPassword,\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/controllers/auth.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 72,
+    "kind": "variable",
+    "name": "requireRoot",
+    "memberof": "src/controllers/auth.js",
+    "static": true,
+    "longname": "src/controllers/auth.js~requireRoot",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 73,
+    "kind": "variable",
+    "name": "HttpStatus",
+    "memberof": "src/controllers/auth.js",
+    "static": true,
+    "longname": "src/controllers/auth.js~HttpStatus",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 74,
+    "kind": "variable",
+    "name": "validationResult",
+    "memberof": "src/controllers/auth.js",
+    "static": true,
+    "longname": "src/controllers/auth.js~validationResult",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "variable",
+    "name": "Exceptions",
+    "memberof": "src/controllers/auth.js",
+    "static": true,
+    "longname": "src/controllers/auth.js~Exceptions",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 76,
+    "kind": "variable",
+    "name": "auth",
+    "memberof": "src/controllers/auth.js",
+    "static": true,
+    "longname": "src/controllers/auth.js~auth",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 77,
+    "kind": "variable",
+    "name": "users",
+    "memberof": "src/controllers/auth.js",
+    "static": true,
+    "longname": "src/controllers/auth.js~users",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "function",
+    "name": "validateRequest",
+    "memberof": "src/controllers/auth.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/auth.js~validateRequest",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 79,
+    "kind": "function",
+    "name": "signin",
+    "memberof": "src/controllers/auth.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/controllers/auth.js~signin",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 80,
+    "kind": "function",
+    "name": "signup",
+    "memberof": "src/controllers/auth.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/controllers/auth.js~signup",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 81,
+    "kind": "function",
+    "name": "confirmSignup",
+    "memberof": "src/controllers/auth.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/controllers/auth.js~confirmSignup",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 50,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 82,
+    "kind": "function",
+    "name": "recover",
+    "memberof": "src/controllers/auth.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/controllers/auth.js~recover",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 62,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 83,
+    "kind": "function",
+    "name": "resetPassword",
+    "memberof": "src/controllers/auth.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/controllers/auth.js~resetPassword",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 78,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 84,
+    "kind": "file",
+    "name": "src/controllers/companies.js",
+    "content": "const requireRoot = require('app-root-path').require\nconst Exceptions = requireRoot('/src/util/exceptions')\nconst HttpStatus = require('http-status-codes')\nconst { companies } = requireRoot('/src/data/repositories')\n\nconst list = async (req, res, next) => {\n  const comps = await companies.getAllCompanies()\n  return res.apiSuccess(comps)\n}\n\nconst getByID = async (req, res, next) => {\n  const companyID = req.params.id\n\n  const company = await companies.findByID(companyID)\n  if (!company) {\n    throw new Exceptions.RecordNotFoundException()\n  }\n  return res.apiSuccess(company)\n}\n\nconst create = async (req, res, next) => {\n  const name = req.body.name\n  const newCompany = await companies.createCompany(name)\n\n  return res.apiSuccess(newCompany, HttpStatus.CREATED)\n}\n\nconst update = (req, res, next) => {\n  return null // return companies.updateCompany(companyData)\n}\n\nmodule.exports = {\n  list,\n  getByID,\n  create,\n  update,\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/controllers/companies.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 85,
+    "kind": "variable",
+    "name": "requireRoot",
+    "memberof": "src/controllers/companies.js",
+    "static": true,
+    "longname": "src/controllers/companies.js~requireRoot",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/companies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 86,
+    "kind": "variable",
+    "name": "Exceptions",
+    "memberof": "src/controllers/companies.js",
+    "static": true,
+    "longname": "src/controllers/companies.js~Exceptions",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/companies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 87,
+    "kind": "variable",
+    "name": "HttpStatus",
+    "memberof": "src/controllers/companies.js",
+    "static": true,
+    "longname": "src/controllers/companies.js~HttpStatus",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/companies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "variable",
+    "name": "companies",
+    "memberof": "src/controllers/companies.js",
+    "static": true,
+    "longname": "src/controllers/companies.js~companies",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/companies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "function",
+    "name": "list",
+    "memberof": "src/controllers/companies.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/controllers/companies.js~list",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/companies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 90,
+    "kind": "function",
+    "name": "getByID",
+    "memberof": "src/controllers/companies.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/controllers/companies.js~getByID",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/companies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "function",
+    "name": "create",
+    "memberof": "src/controllers/companies.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/controllers/companies.js~create",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/companies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 92,
+    "kind": "function",
+    "name": "update",
+    "memberof": "src/controllers/companies.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/companies.js~update",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/companies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 93,
+    "kind": "file",
+    "name": "src/controllers/index.js",
+    "content": "module.exports = {\n  companies: require('./companies'),\n  users: require('./users'),\n  auth: require('./auth'),\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/controllers/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 94,
+    "kind": "file",
+    "name": "src/controllers/users.js",
+    "content": "const requireRoot = require('app-root-path').require\nconst Exceptions = requireRoot('/src/util/exceptions')\nconst { users } = requireRoot('/src/data/repositories')\n\nconst getByID = async (userID) => {\n  const user = await users.findById(userID)\n  if (!user) {\n    throw new Exceptions.RecordNotFoundException()\n  }\n\n  return user\n}\n\nconst create = (fields) => {\n  return users.createUser(fields)\n}\n\nmodule.exports = {\n  getByID,\n  create,\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/controllers/users.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 95,
+    "kind": "variable",
+    "name": "requireRoot",
+    "memberof": "src/controllers/users.js",
+    "static": true,
+    "longname": "src/controllers/users.js~requireRoot",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/users.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 96,
+    "kind": "variable",
+    "name": "Exceptions",
+    "memberof": "src/controllers/users.js",
+    "static": true,
+    "longname": "src/controllers/users.js~Exceptions",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/users.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 97,
+    "kind": "variable",
+    "name": "users",
+    "memberof": "src/controllers/users.js",
+    "static": true,
+    "longname": "src/controllers/users.js~users",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/users.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 98,
+    "kind": "function",
+    "name": "getByID",
+    "memberof": "src/controllers/users.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/controllers/users.js~getByID",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/users.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "userID",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 99,
+    "kind": "function",
+    "name": "create",
+    "memberof": "src/controllers/users.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/users.js~create",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/controllers/users.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [
+      {
+        "name": "fields",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 100,
+    "kind": "file",
+    "name": "src/data/domain-model/company.js",
+    "content": "module.exports = (sequelize, DataTypes) => {\n  const Company = sequelize.define('Company', {\n    id: {\n      type: DataTypes.BIGINT,\n      allowNull: false,\n      autoIncrement: true,\n      primaryKey: true,\n    },\n    companyName: {\n      type: DataTypes.STRING,\n      allowNull: false,\n      unique: true,\n    },\n  }, {\n    timestamps: true,\n\n    paranoid: true,\n\n    /* defaultScope: {\n      where: {\n        isDeleted: false\n      }\n    }, */\n\n    scopes: {\n      deleted: {\n        where: {\n          deleted: true,\n        },\n      },\n    },\n  })\n\n  // ====================== Associations\n  Company.associate = (models) => {\n    Company.hasMany(models.Employee, {\n      foreignKey: 'companyID',\n    })\n  }\n\n  // ====================== Hooks\n\n  // ====================== Class Methods\n\n  // ====================== Instance Methods\n\n  return Company\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/data/domain-model/company.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 101,
+    "kind": "file",
+    "name": "src/data/domain-model/employee-skill.js",
+    "content": "module.exports = (sequelize, DataTypes) => {\n  const EmployeeSkill = sequelize.define('EmployeeSkill', {\n    id: {\n      type: DataTypes.BIGINT,\n      allowNull: false,\n      autoIncrement: true,\n      primaryKey: true,\n    },\n    employeeID: {\n      type: DataTypes.BIGINT,\n      allowNull: false,\n    },\n    skillID: {\n      type: DataTypes.BIGINT,\n      allowNull: false,\n    },\n  })\n\n  // ====================== Associations\n  EmployeeSkill.associate = (models) => {\n    EmployeeSkill.belongsTo(models.Employee, {\n      foreignKey: 'employeeID',\n    })\n    EmployeeSkill.belongsTo(models.Skill, {\n      foreignKey: 'skillID',\n    })\n  }\n\n  // ====================== Hooks\n\n  // ====================== Class Methods\n\n  // ====================== Instance Methods\n\n  return EmployeeSkill\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/data/domain-model/employee-skill.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 102,
+    "kind": "file",
+    "name": "src/data/domain-model/employee.js",
+    "content": "module.exports = (sequelize, DataTypes) => {\n  const Employee = sequelize.define('Employee', {\n    id: {\n      type: DataTypes.BIGINT,\n      allowNull: false,\n      autoIncrement: true,\n      primaryKey: true,\n    },\n    name: {\n      type: DataTypes.STRING(128),\n      allowNull: false,\n    },\n    companyID: {\n      type: DataTypes.BIGINT,\n      allowNull: false,\n    },\n    userID: {\n      type: DataTypes.BIGINT,\n      allowNull: true,\n    },\n  })\n\n  // ====================== Associations\n  Employee.associate = (models) => {\n    Employee.belongsTo(models.Company, {\n      foreignKey: 'companyID',\n    })\n\n    Employee.belongsTo(models.User, {\n      foreignKey: 'userID',\n    })\n\n    Employee.belongsToMany(models.Skill, {\n      through: models.EmployeeSkill,\n      foreignKey: 'dmployeeID',\n    })\n  }\n\n  // ====================== Hooks\n\n  // ====================== Class Methods\n\n  // ====================== Instance Methods\n\n  return Employee\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/data/domain-model/employee.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 103,
+    "kind": "file",
+    "name": "src/data/domain-model/index.js",
+    "content": "const requireRoot = require('app-root-path').require\nconst fs = require('fs')\nconst path = require('path')\nconst Sequelize = require('sequelize')\nconst basename = path.basename(module.filename)\nconst env = process.env.NODE_ENV || 'development'\nconst config = requireRoot('/src/config/config.js')[env]\nconst db = {}\n\nlet sequelize = {}\nif (config.use_env_variable) {\n  sequelize = new Sequelize(process.env[config.use_env_variable])\n} else {\n  sequelize = new Sequelize(config.database, config.username, config.password, config)\n}\n\nfs\n  .readdirSync(__dirname)\n  .filter(file =>\n    (file.indexOf('.') !== 0) &&\n    (file !== basename) &&\n    (file.slice(-3) === '.js')\n  )\n  .forEach(file => {\n    const model = sequelize['import'](path.join(__dirname, file))\n    db[model.name] = model\n  })\n\nObject.keys(db).forEach(modelName => {\n  if (db[modelName].associate) {\n    db[modelName].associate(db)\n  }\n})\n\ndb.sequelize = sequelize\ndb.Sequelize = Sequelize\n\nmodule.exports = db\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/data/domain-model/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 104,
+    "kind": "variable",
+    "name": "requireRoot",
+    "memberof": "src/data/domain-model/index.js",
+    "static": true,
+    "longname": "src/data/domain-model/index.js~requireRoot",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/domain-model/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 105,
+    "kind": "variable",
+    "name": "fs",
+    "memberof": "src/data/domain-model/index.js",
+    "static": true,
+    "longname": "src/data/domain-model/index.js~fs",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/domain-model/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 106,
+    "kind": "variable",
+    "name": "path",
+    "memberof": "src/data/domain-model/index.js",
+    "static": true,
+    "longname": "src/data/domain-model/index.js~path",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/domain-model/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 107,
+    "kind": "variable",
+    "name": "Sequelize",
+    "memberof": "src/data/domain-model/index.js",
+    "static": true,
+    "longname": "src/data/domain-model/index.js~Sequelize",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/domain-model/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 108,
+    "kind": "variable",
+    "name": "basename",
+    "memberof": "src/data/domain-model/index.js",
+    "static": true,
+    "longname": "src/data/domain-model/index.js~basename",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/domain-model/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 109,
+    "kind": "variable",
+    "name": "env",
+    "memberof": "src/data/domain-model/index.js",
+    "static": true,
+    "longname": "src/data/domain-model/index.js~env",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/domain-model/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 110,
+    "kind": "variable",
+    "name": "config",
+    "memberof": "src/data/domain-model/index.js",
+    "static": true,
+    "longname": "src/data/domain-model/index.js~config",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/domain-model/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 111,
+    "kind": "variable",
+    "name": "db",
+    "memberof": "src/data/domain-model/index.js",
+    "static": true,
+    "longname": "src/data/domain-model/index.js~db",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/domain-model/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 112,
+    "kind": "variable",
+    "name": "sequelize",
+    "memberof": "src/data/domain-model/index.js",
+    "static": true,
+    "longname": "src/data/domain-model/index.js~sequelize",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/domain-model/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 113,
+    "kind": "file",
+    "name": "src/data/domain-model/language.js",
+    "content": "module.exports = (sequelize, DataTypes) => {\n  const Skill = sequelize.define('Skill', {\n    id: {\n      type: DataTypes.BIGINT,\n      allowNull: false,\n      autoIncrement: true,\n      primaryKey: true,\n    },\n    name: {\n      type: DataTypes.STRING(128),\n      allowNull: false,\n    },\n  })\n\n  // ====================== Associations\n  Skill.associate = (models) => {\n    Skill.belongsToMany(models.Employee, {\n      through: models.EmployeeSkill,\n      foreignKey: 'skillID',\n    })\n  }\n\n  // ====================== Hooks\n\n  // ====================== Class Methods\n\n  // ====================== Instance Methods\n\n  return Skill\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/data/domain-model/language.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 114,
+    "kind": "file",
+    "name": "src/data/domain-model/user.js",
+    "content": "const bcrypt = require('bcrypt-promise')\n\nmodule.exports = (sequelize, DataTypes) => {\n  const User = sequelize.define('User', {\n    id: {\n      type: DataTypes.BIGINT,\n      allowNull: false,\n      autoIncrement: true,\n      primaryKey: true,\n    },\n    email: {\n      type: DataTypes.STRING,\n      allowNull: false,\n      unique: true,\n    },\n    firstName: {\n      type: DataTypes.STRING,\n      allowNull: true,\n    },\n    lastName: {\n      type: DataTypes.STRING,\n      allowNull: true,\n    },\n    password: {\n      type: DataTypes.STRING,\n      allowNull: false,\n    },\n    isConfirmed: {\n      type: DataTypes.BOOLEAN,\n    },\n    confirmationToken: {\n      type: DataTypes.STRING,\n      allowNull: true,\n    },\n    recoveryToken: {\n      type: DataTypes.STRING,\n      allowNull: true,\n    },\n  })\n\n  // ====================== Associations\n\n  // ====================== Hooks\n  User.beforeSave(async (user, options) => {\n    if (user.changed('password') || user.changed('confirmationToken') || user.changed('recoveryToken')) {\n      const salt = await bcrypt.genSalt(12)\n      user.password = await bcrypt.hash(user.password, salt)\n    }\n  })\n\n  // ====================== Class Methods\n\n  // ====================== Instance methods\n  User.prototype.toJSON = () => {\n    return {\n      id: this.id,\n      email: this.email,\n      firstName: this.firstName ? this.firstName : undefined,\n      lastName: this.lastName ? this.lastName : undefined,\n    }\n  }\n\n  User.prototype.comparePassword = function (password) {\n    return bcrypt.compare(password, this.password)\n  }\n\n  User.prototype.compareConfirmationToken = function (token) {\n    return bcrypt.compare(token, this.confirmationToken)\n  }\n\n  User.prototype.compareRecoveryToken = function (token) {\n    return bcrypt.compare(token, this.recoveryToken)\n  }\n\n  return User\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/data/domain-model/user.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 115,
+    "kind": "variable",
+    "name": "bcrypt",
+    "memberof": "src/data/domain-model/user.js",
+    "static": true,
+    "longname": "src/data/domain-model/user.js~bcrypt",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/domain-model/user.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 116,
+    "kind": "file",
+    "name": "src/data/migrations/20180703164148-create-user.js",
+    "content": "module.exports = {\n  up: function (queryInterface, DataTypes) {\n    return queryInterface.createTable('Users', {\n      id: {\n        type: DataTypes.BIGINT,\n        allowNull: false,\n        autoIncrement: true,\n        primaryKey: true,\n      },\n      email: {\n        type: DataTypes.STRING,\n        allowNull: false,\n        unique: true,\n      },\n      firstName: {\n        type: DataTypes.STRING,\n        allowNull: true,\n      },\n      lastName: {\n        type: DataTypes.STRING,\n        allowNull: true,\n      },\n      password: {\n        type: DataTypes.STRING,\n        allowNull: false,\n      },\n      isConfirmed: {\n        type: DataTypes.BOOLEAN,\n      },\n      confirmationToken: {\n        type: DataTypes.STRING,\n        allowNull: true,\n      },\n      recoveryToken: {\n        type: DataTypes.STRING,\n        allowNull: true,\n      },\n      createdAt: {\n        allowNull: false,\n        type: DataTypes.DATE,\n      },\n      updatedAt: {\n        allowNull: false,\n        type: DataTypes.DATE,\n      },\n      deletedAt: {\n        type: DataTypes.DATE,\n      },\n    })\n  },\n  down: function (queryInterface, DataTypes) {\n    return queryInterface.dropTable('Users')\n  },\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/data/migrations/20180703164148-create-user.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 117,
+    "kind": "file",
+    "name": "src/data/migrations/20180704091522-create-company.js",
+    "content": "module.exports = {\n  up: (queryInterface, DataTypes) =>\n    queryInterface.createTable('Companies', {\n      id: {\n        type: DataTypes.BIGINT,\n        allowNull: false,\n        autoIncrement: true,\n        primaryKey: true,\n      },\n      companyName: {\n        type: DataTypes.STRING,\n        allowNull: false,\n      },\n      createdAt: {\n        allowNull: false,\n        type: DataTypes.DATE,\n      },\n      updatedAt: {\n        allowNull: false,\n        type: DataTypes.DATE,\n      },\n      deletedAt: {\n        allowNull: true,\n        type: DataTypes.DATE,\n      },\n    }),\n  down: (queryInterface) =>\n    queryInterface.dropTable('Companies'),\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/data/migrations/20180704091522-create-company.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 118,
+    "kind": "file",
+    "name": "src/data/migrations/20180704091831-create-employee.js",
+    "content": "module.exports = {\n  up: (queryInterface, DataTypes) =>\n    queryInterface.createTable('Employees', {\n      id: {\n        type: DataTypes.BIGINT,\n        allowNull: false,\n        autoIncrement: true,\n        primaryKey: true,\n      },\n      name: {\n        type: DataTypes.STRING,\n        allowNull: false,\n      },\n      companyID: {\n        type: DataTypes.BIGINT,\n        allowNull: false,\n        references: {\n          model: 'Companies',\n          key: 'id',\n        },\n        onUpdate: 'CASCADE',\n        onDelete: 'RESTRICT',\n      },\n      userID: {\n        type: DataTypes.BIGINT,\n        allowNull: false,\n        references: {\n          model: 'Users',\n          key: 'id',\n        },\n        onUpdate: 'CASCADE',\n        onDelete: 'RESTRICT',\n      },\n      createdAt: {\n        allowNull: false,\n        type: DataTypes.DATE,\n      },\n      updatedAt: {\n        allowNull: false,\n        type: DataTypes.DATE,\n      },\n      deletedAt: {\n        allowNull: true,\n        type: DataTypes.DATE,\n      },\n    }),\n  down: (queryInterface) =>\n    queryInterface.dropTable('Employees'),\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/data/migrations/20180704091831-create-employee.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 119,
+    "kind": "file",
+    "name": "src/data/migrations/20180704092003-create-skill.js",
+    "content": "module.exports = {\n  up: (queryInterface, DataTypes) =>\n    queryInterface.createTable('Skills', {\n      id: {\n        type: DataTypes.BIGINT,\n        allowNull: false,\n        autoIncrement: true,\n        primaryKey: true,\n      },\n      name: {\n        type: DataTypes.STRING(128),\n        allowNull: false,\n      },\n      createdAt: {\n        allowNull: false,\n        type: DataTypes.DATE,\n      },\n      updatedAt: {\n        allowNull: false,\n        type: DataTypes.DATE,\n      },\n      deletedAt: {\n        allowNull: true,\n        type: DataTypes.DATE,\n      },\n    }),\n  down: (queryInterface) =>\n    queryInterface.dropTable('Skills'),\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/data/migrations/20180704092003-create-skill.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 120,
+    "kind": "file",
+    "name": "src/data/migrations/20180704092256-create-employee-skill.js",
+    "content": "module.exports = {\n  up: (queryInterface, DataTypes) =>\n    queryInterface.createTable('EmployeeSkill', {\n      developerID: {\n        type: DataTypes.BIGINT,\n        primaryKey: true,\n        references: {\n          model: 'Employees',\n          key: 'id',\n        },\n        onUpdate: 'CASCADE',\n        onDelete: 'RESTRICT',\n      },\n      languageID: {\n        type: DataTypes.BIGINT,\n        primaryKey: true,\n        references: {\n          model: 'Skills',\n          key: 'id',\n        },\n        onUpdate: 'CASCADE',\n        onDelete: 'RESTRICT',\n      },\n      createdAt: {\n        allowNull: false,\n        type: DataTypes.DATE,\n      },\n      updatedAt: {\n        allowNull: false,\n        type: DataTypes.DATE,\n      },\n      deletedAt: {\n        allowNull: true,\n        type: DataTypes.DATE,\n      },\n    }),\n  down: (queryInterface) =>\n    queryInterface.dropTable('EmployeeSkill'),\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/data/migrations/20180704092256-create-employee-skill.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 121,
+    "kind": "file",
+    "name": "src/data/repositories/companies-repository.js",
+    "content": "const requireRoot = require('app-root-path').require\nconst Op = require('sequelize').Op\nconst Exceptions = requireRoot('/src/util/exceptions')\n\nconst CompaniesRepository = (orm) => {\n  const findByID = (companyID) => {\n    return orm.Company.findByPk(companyID)\n  }\n\n  const getAllCompanies = () => {\n    return orm.Company.findAll({\n      attributes: ['id', 'companyName'],\n    })\n  }\n\n  const findByName = (name) => {\n    return orm.Company.findOne({\n      where: {\n        companyName: {\n          [Op.eq]: name,\n        },\n      },\n    })\n  }\n\n  const createCompany = async (name) => {\n    let company = await findByName(name)\n    if (company) {\n      throw new Exceptions.RecordAlreadyExistsException()\n    }\n\n    return orm.Company.create({\n      companyName: name,\n    })\n  }\n\n  return {\n    findByID,\n    getAllCompanies,\n    findByName,\n    createCompany,\n  }\n}\n\nmodule.exports = CompaniesRepository\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/data/repositories/companies-repository.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 122,
+    "kind": "variable",
+    "name": "requireRoot",
+    "memberof": "src/data/repositories/companies-repository.js",
+    "static": true,
+    "longname": "src/data/repositories/companies-repository.js~requireRoot",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/repositories/companies-repository.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 123,
+    "kind": "variable",
+    "name": "Op",
+    "memberof": "src/data/repositories/companies-repository.js",
+    "static": true,
+    "longname": "src/data/repositories/companies-repository.js~Op",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/repositories/companies-repository.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 124,
+    "kind": "variable",
+    "name": "Exceptions",
+    "memberof": "src/data/repositories/companies-repository.js",
+    "static": true,
+    "longname": "src/data/repositories/companies-repository.js~Exceptions",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/repositories/companies-repository.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 125,
+    "kind": "function",
+    "name": "CompaniesRepository",
+    "memberof": "src/data/repositories/companies-repository.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/data/repositories/companies-repository.js~CompaniesRepository",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/repositories/companies-repository.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "orm",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"findByID\": *, \"getAllCompanies\": *, \"findByName\": *, \"createCompany\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 126,
+    "kind": "file",
+    "name": "src/data/repositories/index.js",
+    "content": "const requireRoot = require('app-root-path').require\nconst orm = requireRoot('/src/data/domain-model')\n\nconst companies = require('./companies-repository')(orm)\nconst users = require('./users-repository')(orm)\n\nmodule.exports = {\n  companies,\n  users,\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/data/repositories/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 127,
+    "kind": "variable",
+    "name": "requireRoot",
+    "memberof": "src/data/repositories/index.js",
+    "static": true,
+    "longname": "src/data/repositories/index.js~requireRoot",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/repositories/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 128,
+    "kind": "variable",
+    "name": "orm",
+    "memberof": "src/data/repositories/index.js",
+    "static": true,
+    "longname": "src/data/repositories/index.js~orm",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/repositories/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 129,
+    "kind": "variable",
+    "name": "companies",
+    "memberof": "src/data/repositories/index.js",
+    "static": true,
+    "longname": "src/data/repositories/index.js~companies",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/repositories/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 130,
+    "kind": "variable",
+    "name": "users",
+    "memberof": "src/data/repositories/index.js",
+    "static": true,
+    "longname": "src/data/repositories/index.js~users",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/repositories/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 131,
+    "kind": "file",
+    "name": "src/data/repositories/users-repository.js",
+    "content": "const requireRoot = require('app-root-path').require\nconst Op = require('sequelize').Op\nconst Exceptions = requireRoot('/src/util/exceptions')\n\nconst UsersRepository = (orm) => {\n\n  const findByID = (userID) => {\n    return orm.User.findByPk(userID)\n  }\n\n  const findByEmail = (email) => {\n    return orm.User.findOne({\n      where: {\n        email: {\n          [Op.eq]: email,\n        },\n      },\n    })\n  }\n\n  const findByConfirmationToken = (token) => {\n    return orm.User.findOne({\n      where: {\n        confirmationToken: {\n          [Op.eq]: token,\n        },\n      },\n    })\n  }\n\n  const findByRecoveryToken = (token) => {\n    return orm.User.findOne({\n      where: {\n        recoveryToken: {\n          [Op.eq]: token,\n        },\n      },\n    })\n  }\n\n  const createUser = async (newUser) => {\n    let user = await findByEmail(newUser.email)\n    if (user) {\n      throw new Exceptions.RecordAlreadyExistsException()\n    }\n\n    return orm.User.create(newUser)\n  }\n\n  return {\n    findByID,\n    findByEmail,\n    findByConfirmationToken,\n    findByRecoveryToken,\n    createUser,\n  }\n}\n\nmodule.exports = UsersRepository\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/data/repositories/users-repository.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 132,
+    "kind": "variable",
+    "name": "requireRoot",
+    "memberof": "src/data/repositories/users-repository.js",
+    "static": true,
+    "longname": "src/data/repositories/users-repository.js~requireRoot",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/repositories/users-repository.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 133,
+    "kind": "variable",
+    "name": "Op",
+    "memberof": "src/data/repositories/users-repository.js",
+    "static": true,
+    "longname": "src/data/repositories/users-repository.js~Op",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/repositories/users-repository.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 134,
+    "kind": "variable",
+    "name": "Exceptions",
+    "memberof": "src/data/repositories/users-repository.js",
+    "static": true,
+    "longname": "src/data/repositories/users-repository.js~Exceptions",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/repositories/users-repository.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 135,
+    "kind": "function",
+    "name": "UsersRepository",
+    "memberof": "src/data/repositories/users-repository.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/data/repositories/users-repository.js~UsersRepository",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/data/repositories/users-repository.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "orm",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"findByID\": *, \"findByEmail\": *, \"findByConfirmationToken\": *, \"findByRecoveryToken\": *, \"createUser\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 136,
+    "kind": "file",
+    "name": "src/middleware/passport.js",
+    "content": "const requireRoot = require('app-root-path').require\nconst passport = require('passport')\nconst JwtStrategy = require('passport-jwt').Strategy\nconst ExtractJwt = require('passport-jwt').ExtractJwt\nconst Exceptions = requireRoot('/src/util/exceptions')\nconst { users } = requireRoot('/src/data/repositories')\n\n/*\n* Initializes passport with the required strategies.\n* */\nconst init = () => {\n  const opts = {\n    jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),\n    secretOrKey: process.env.JWT_SECRET,\n  }\n\n  passport.use(new JwtStrategy(opts, (jwtPayload, done) => {\n    users.findByID(jwtPayload._id)\n      .then((user) => {\n        if (user) {\n          done(null, user)\n        } else {\n          done(null, false)\n        }\n      })\n      .catch((err) => {\n        done(err)\n      })\n  }))\n}\n\n/*\n* Passport authentication middleware.\n*\n* @param {req} Express.js request object.\n* @param {req} Express.js response object.\n* @param {next} Express.js next middleware function.\n* */\nconst isAuthenticated = (req, res, next) => {\n  return passport.authenticate('jwt', { session: false }, (err, user, info) => {\n    if (err) {\n      return next(err)\n    }\n\n    if (!user) {\n      return next(new Exceptions.AuthenticationException())\n    }\n\n    // TODO in the future if we need to add more token validations this is the place. Revoked tokens, etc\n\n    req.user = user\n    next()\n  })(req, res, next)\n}\n\nmodule.exports = {\n  init,\n  isAuthenticated,\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/middleware/passport.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 137,
+    "kind": "variable",
+    "name": "requireRoot",
+    "memberof": "src/middleware/passport.js",
+    "static": true,
+    "longname": "src/middleware/passport.js~requireRoot",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/middleware/passport.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 138,
+    "kind": "variable",
+    "name": "passport",
+    "memberof": "src/middleware/passport.js",
+    "static": true,
+    "longname": "src/middleware/passport.js~passport",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/middleware/passport.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 139,
+    "kind": "variable",
+    "name": "JwtStrategy",
+    "memberof": "src/middleware/passport.js",
+    "static": true,
+    "longname": "src/middleware/passport.js~JwtStrategy",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/middleware/passport.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 140,
+    "kind": "variable",
+    "name": "ExtractJwt",
+    "memberof": "src/middleware/passport.js",
+    "static": true,
+    "longname": "src/middleware/passport.js~ExtractJwt",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/middleware/passport.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 141,
+    "kind": "variable",
+    "name": "Exceptions",
+    "memberof": "src/middleware/passport.js",
+    "static": true,
+    "longname": "src/middleware/passport.js~Exceptions",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/middleware/passport.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 142,
+    "kind": "variable",
+    "name": "users",
+    "memberof": "src/middleware/passport.js",
+    "static": true,
+    "longname": "src/middleware/passport.js~users",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/middleware/passport.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 143,
+    "kind": "function",
+    "name": "init",
+    "memberof": "src/middleware/passport.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/middleware/passport.js~init",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/middleware/passport.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 144,
+    "kind": "function",
+    "name": "isAuthenticated",
+    "memberof": "src/middleware/passport.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/middleware/passport.js~isAuthenticated",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/middleware/passport.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 39,
+    "undocument": true,
+    "params": [
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "res",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "next",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 145,
+    "kind": "file",
+    "name": "src/middleware/response.js",
+    "content": "const HttpStatus = require('http-status-codes')\n\nfunction getFailJson (err, fields = undefined, stackTrace = undefined) {\n  return {\n    error: err.message,\n    errorFields: fields,\n    stack: stackTrace,\n  }\n}\n\nmodule.exports = (req, res, next) => {\n  res.apiSuccess = (data, code = HttpStatus.OK) => {\n    res.status(code).json(data || {})\n  }\n\n  res.apiError = (err, fields = undefined) => {\n    const stackTrace = (req.app.get('env') === 'development' || req.app.get('env') === 'test') ? err.stack : undefined\n\n    return res.status(err.status).json(getFailJson(err, fields, stackTrace))\n  }\n\n  next()\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/middleware/response.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 146,
+    "kind": "variable",
+    "name": "HttpStatus",
+    "memberof": "src/middleware/response.js",
+    "static": true,
+    "longname": "src/middleware/response.js~HttpStatus",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/middleware/response.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 147,
+    "kind": "function",
+    "name": "getFailJson",
+    "memberof": "src/middleware/response.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/middleware/response.js~getFailJson",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/middleware/response.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "err",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "fields",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": "undefined",
+        "defaultValue": "undefined"
+      },
+      {
+        "name": "stackTrace",
+        "optional": true,
+        "types": [
+          "*"
+        ],
+        "defaultRaw": "undefined",
+        "defaultValue": "undefined"
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"error\": *, \"errorFields\": *, \"stack\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 148,
+    "kind": "file",
+    "name": "src/routes/index.js",
+    "content": "const express = require('express')\nconst router = express.Router()\n\nrouter.use('/v1', require('./v1'))\n\nmodule.exports = router\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/routes/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 149,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/routes/index.js",
+    "static": true,
+    "longname": "src/routes/index.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 150,
+    "kind": "variable",
+    "name": "router",
+    "memberof": "src/routes/index.js",
+    "static": true,
+    "longname": "src/routes/index.js~router",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 151,
+    "kind": "file",
+    "name": "src/routes/v1/auth.js",
+    "content": "const requireRoot = require('app-root-path').require\nconst express = require('express')\nconst router = express.Router()\nconst { check } = require('express-validator/check')\n\nconst { auth } = requireRoot('/src/controllers')\n\nconst pwdLength = Number(process.env.PASSWORD_LENGTH || 5)\n\nrouter.post('/signin', [\n  check('email').isEmail(),\n], auth.signin)\n\nrouter.post('/signup', [\n  check('email').isEmail(),\n  check('password').isLength({ min: pwdLength }),\n  check('confirmPassword').custom((value, { req }) => value === req.body.password),\n], auth.signup)\n\nrouter.get('/confirm', [\n  check('token').exists(),\n], auth.confirmSignup)\n\nrouter.post('/recover', [\n  check('email').isEmail(),\n], auth.recover)\n\nrouter.post('/reset', [\n  check('token').exists(),\n  check('password').isLength({ min: pwdLength }),\n  check('confirmPassword').isLength({ min: pwdLength }),\n], auth.resetPassword)\n\nmodule.exports = router\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/routes/v1/auth.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 152,
+    "kind": "variable",
+    "name": "requireRoot",
+    "memberof": "src/routes/v1/auth.js",
+    "static": true,
+    "longname": "src/routes/v1/auth.js~requireRoot",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 153,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/routes/v1/auth.js",
+    "static": true,
+    "longname": "src/routes/v1/auth.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 154,
+    "kind": "variable",
+    "name": "router",
+    "memberof": "src/routes/v1/auth.js",
+    "static": true,
+    "longname": "src/routes/v1/auth.js~router",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 155,
+    "kind": "variable",
+    "name": "check",
+    "memberof": "src/routes/v1/auth.js",
+    "static": true,
+    "longname": "src/routes/v1/auth.js~check",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 156,
+    "kind": "variable",
+    "name": "auth",
+    "memberof": "src/routes/v1/auth.js",
+    "static": true,
+    "longname": "src/routes/v1/auth.js~auth",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 157,
+    "kind": "variable",
+    "name": "pwdLength",
+    "memberof": "src/routes/v1/auth.js",
+    "static": true,
+    "longname": "src/routes/v1/auth.js~pwdLength",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 158,
+    "kind": "file",
+    "name": "src/routes/v1/companies.js",
+    "content": "const requireRoot = require('app-root-path').require\nconst express = require('express')\nconst router = express.Router()\n\nconst { isAuthenticated } = requireRoot('/src/middleware/passport')\nconst { companies } = requireRoot('/src/controllers')\n\nrouter.get('/', isAuthenticated, companies.list)\n\nrouter.get('/:id', isAuthenticated, companies.getByID)\n\nrouter.post('/', isAuthenticated, companies.create)\n\n// router.post('/', isAuthenticated, companies.update)\n\nmodule.exports = router\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/routes/v1/companies.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 159,
+    "kind": "variable",
+    "name": "requireRoot",
+    "memberof": "src/routes/v1/companies.js",
+    "static": true,
+    "longname": "src/routes/v1/companies.js~requireRoot",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/companies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 160,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/routes/v1/companies.js",
+    "static": true,
+    "longname": "src/routes/v1/companies.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/companies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 161,
+    "kind": "variable",
+    "name": "router",
+    "memberof": "src/routes/v1/companies.js",
+    "static": true,
+    "longname": "src/routes/v1/companies.js~router",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/companies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 162,
+    "kind": "variable",
+    "name": "isAuthenticated",
+    "memberof": "src/routes/v1/companies.js",
+    "static": true,
+    "longname": "src/routes/v1/companies.js~isAuthenticated",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/companies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 163,
+    "kind": "variable",
+    "name": "companies",
+    "memberof": "src/routes/v1/companies.js",
+    "static": true,
+    "longname": "src/routes/v1/companies.js~companies",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/companies.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 164,
+    "kind": "file",
+    "name": "src/routes/v1/index.js",
+    "content": "const express = require('express')\nconst router = express.Router()\nconst bodyParser = require('body-parser')\nconst cors = require('cors')\nconst requireRoot = require('app-root-path').require // FIXME remove this from all files that use it and make it global\nconst Exceptions = requireRoot('/src/util/exceptions')\n\nrouter.use(bodyParser.json())\n\nrouter.use(cors({ credentials: true, origin: true }))\nrouter.options('*', cors())\n\nrouter.use('//', function (req, res) {\n  res.apiSuccess({ message: 'Welcome to the API', data: {} })\n})\n\nrouter.use('/auth', require('./auth'))\nrouter.use('/users', require('./users'))\nrouter.use('/companies', require('./companies'))\n\nrouter.use('*', function (req, res) {\n  res.apiError(new Exceptions.RouteNotFoundException())\n})\n\n// router.use((err, req, res, next) => {\n//   res.apiError(new Exceptions.InternalServerError(err))\n// })\n\nmodule.exports = router\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/routes/v1/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 165,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/routes/v1/index.js",
+    "static": true,
+    "longname": "src/routes/v1/index.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 166,
+    "kind": "variable",
+    "name": "router",
+    "memberof": "src/routes/v1/index.js",
+    "static": true,
+    "longname": "src/routes/v1/index.js~router",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 167,
+    "kind": "variable",
+    "name": "bodyParser",
+    "memberof": "src/routes/v1/index.js",
+    "static": true,
+    "longname": "src/routes/v1/index.js~bodyParser",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 168,
+    "kind": "variable",
+    "name": "cors",
+    "memberof": "src/routes/v1/index.js",
+    "static": true,
+    "longname": "src/routes/v1/index.js~cors",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 169,
+    "kind": "variable",
+    "name": "requireRoot",
+    "memberof": "src/routes/v1/index.js",
+    "static": true,
+    "longname": "src/routes/v1/index.js~requireRoot",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 170,
+    "kind": "variable",
+    "name": "Exceptions",
+    "memberof": "src/routes/v1/index.js",
+    "static": true,
+    "longname": "src/routes/v1/index.js~Exceptions",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 171,
+    "kind": "file",
+    "name": "src/routes/v1/users.js",
+    "content": "// const requireRoot = require('app-root-path').require\nconst express = require('express')\nconst router = express.Router()\n\n// const { users } = requireRoot('/src/controllers');\n\nrouter.post('/', async (req, res, next) => {\n  res.apiSuccess({}, 200)\n})\n\nmodule.exports = router\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/routes/v1/users.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 172,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/routes/v1/users.js",
+    "static": true,
+    "longname": "src/routes/v1/users.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/users.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 173,
+    "kind": "variable",
+    "name": "router",
+    "memberof": "src/routes/v1/users.js",
+    "static": true,
+    "longname": "src/routes/v1/users.js~router",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/routes/v1/users.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 174,
+    "kind": "file",
+    "name": "src/services/auth.js",
+    "content": "const requireRoot = require('app-root-path').require\nconst jwt = require('jsonwebtoken')\nconst Exceptions = requireRoot('/src/util/exceptions')\n\nconst mailer = require('./mailer')\nconst { users } = requireRoot('/src/data/repositories')\n\nconst authenticate = async (email, password) => {\n  const user = await users.findByEmail(email)\n\n  if (!user) {\n    throw new Exceptions.RecordNotFoundException()\n  }\n\n  if (!user.comparePassword(password)) {\n    throw new Exceptions.AuthenticationException()\n  }\n\n  return user\n}\n\nconst sendConfirmation = async (user) => {\n  const confirmToken = generateToken(user)\n  try {\n    if (await mailer.sendSignupConfirmationEmail(user, confirmToken)) {\n      user.confirmationToken = confirmToken\n      return user.save()\n    }\n  } catch (err) {\n    await user.destroy({ force: true })\n    throw new Exceptions.RecordCreationException()\n  }\n}\n\nconst confirmUserSignup = async (token) => {\n  try {\n    jwt.verify(token, process.env.JWT_SECRET)\n  } catch (err) {\n    throw new Exceptions.InvalidTokenException()\n  }\n\n  const user = await users.findByConfirmationToken(token)\n\n  if (user) {\n    user.confirmationToken = null\n    user.isConfirmed = true\n    return user.save()\n  }\n\n  throw new Exceptions.RecordNotFoundException()\n}\n\nconst sendRecoveryToken = async (user) => {\n  const recoveryToken = generateToken(user, 2)\n\n  await mailer.sendPasswordRecoveryEmail(user, recoveryToken)\n  user.recoveryToken = recoveryToken\n  return user.save()\n}\n\nconst checkRecoveryToken = async (token) => {\n  try {\n    jwt.verify(token, process.env.JWT_SECRET)\n  } catch (err) {\n    throw new Exceptions.InvalidTokenException()\n  }\n\n  const user = await users.findByRecoveryToken(token)\n  if (user) {\n    return user\n  }\n\n  throw new Exceptions.RecordNotFoundException()\n}\n\nconst generateToken = (user) => {\n  const ttl = process.env.JWT_TTL ? process.env.JWT_TTL : 6\n\n  return jwt.sign({ _id: user.id }, process.env.JWT_SECRET, {\n    expiresIn: `${ttl}h`,\n  })\n}\n\nmodule.exports = {\n  authenticate,\n  sendConfirmation,\n  confirmUserSignup,\n  generateToken,\n  sendRecoveryToken,\n  checkRecoveryToken,\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/services/auth.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 175,
+    "kind": "variable",
+    "name": "requireRoot",
+    "memberof": "src/services/auth.js",
+    "static": true,
+    "longname": "src/services/auth.js~requireRoot",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 176,
+    "kind": "variable",
+    "name": "jwt",
+    "memberof": "src/services/auth.js",
+    "static": true,
+    "longname": "src/services/auth.js~jwt",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 177,
+    "kind": "variable",
+    "name": "Exceptions",
+    "memberof": "src/services/auth.js",
+    "static": true,
+    "longname": "src/services/auth.js~Exceptions",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 178,
+    "kind": "variable",
+    "name": "mailer",
+    "memberof": "src/services/auth.js",
+    "static": true,
+    "longname": "src/services/auth.js~mailer",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 179,
+    "kind": "variable",
+    "name": "users",
+    "memberof": "src/services/auth.js",
+    "static": true,
+    "longname": "src/services/auth.js~users",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 180,
+    "kind": "function",
+    "name": "authenticate",
+    "memberof": "src/services/auth.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/auth.js~authenticate",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "params": [
+      {
+        "name": "email",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "password",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 181,
+    "kind": "function",
+    "name": "sendConfirmation",
+    "memberof": "src/services/auth.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/auth.js~sendConfirmation",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "params": [
+      {
+        "name": "user",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 182,
+    "kind": "function",
+    "name": "confirmUserSignup",
+    "memberof": "src/services/auth.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/auth.js~confirmUserSignup",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "params": [
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 183,
+    "kind": "function",
+    "name": "sendRecoveryToken",
+    "memberof": "src/services/auth.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/auth.js~sendRecoveryToken",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 53,
+    "undocument": true,
+    "params": [
+      {
+        "name": "user",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 184,
+    "kind": "function",
+    "name": "checkRecoveryToken",
+    "memberof": "src/services/auth.js",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/services/auth.js~checkRecoveryToken",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 61,
+    "undocument": true,
+    "params": [
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 185,
+    "kind": "function",
+    "name": "generateToken",
+    "memberof": "src/services/auth.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/auth.js~generateToken",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/auth.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 76,
+    "undocument": true,
+    "params": [
+      {
+        "name": "user",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 186,
+    "kind": "file",
+    "name": "src/services/index.js",
+    "content": "const auth = require('./auth')\nconst mailer = require('./mailer')\n\nmodule.exports = {\n  auth,\n  mailer,\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/services/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 187,
+    "kind": "variable",
+    "name": "auth",
+    "memberof": "src/services/index.js",
+    "static": true,
+    "longname": "src/services/index.js~auth",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 188,
+    "kind": "variable",
+    "name": "mailer",
+    "memberof": "src/services/index.js",
+    "static": true,
+    "longname": "src/services/index.js~mailer",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/index.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 189,
+    "kind": "file",
+    "name": "src/services/mailer.js",
+    "content": "// Using api keu from env var SPARKPOST_API_KEY\nconst SparkPost = require('sparkpost')\nconst client = new SparkPost()\n\n// SparkPost template names (it's possible to get this via API)\n// TODO move this tp database so it can be changed without downtime\nconst SIGNUP_CONFIRM_TEMPLATE = 'sign-up-confirmation'\nconst PASSWORD_RECOVERY_TEMPLATE = 'password-recovery'\n\nconst sendSingleEmail = (template, recipient, substitutions) => {\n  return client.transmissions.send({\n    content: {\n      template_id: template,\n    },\n    recipients: [{\n      address: recipient,\n      substitution_data: substitutions,\n    }],\n  })\n}\n\nconst sendSignupConfirmationEmail = (user, token) => {\n  if (process.env.MAILER_ENABLED === '0') {\n    return true\n  }\n\n  let recipient = user.email\n  let name = user.firstName\n  // override recipient in dev/test if override is set\n  if (process.env.NODE_ENV !== 'production' && process.env.OVERRIDE_EMAIL) {\n    recipient = process.env.OVERRIDE_EMAIL\n    name = 'NoName'\n  }\n\n  return sendSingleEmail(SIGNUP_CONFIRM_TEMPLATE, recipient, {\n    name,\n    token,\n  })\n}\n\nconst sendPasswordRecoveryEmail = (user, token) => {\n  if (process.env.MAILER_ENABLED === '0') {\n    return true\n  }\n\n  let recipient = user.email\n  // override recipient in dev/test if override is set\n  if (process.env.NODE_ENV !== 'production' && process.env.OVERRIDE_EMAIL) {\n    recipient = process.env.OVERRIDE_EMAIL\n  }\n\n  return sendSingleEmail(PASSWORD_RECOVERY_TEMPLATE, recipient, {\n    token,\n  })\n}\n\n\nmodule.exports = {\n  sendSignupConfirmationEmail,\n  sendPasswordRecoveryEmail,\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/services/mailer.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 190,
+    "kind": "variable",
+    "name": "SparkPost",
+    "memberof": "src/services/mailer.js",
+    "static": true,
+    "longname": "src/services/mailer.js~SparkPost",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/mailer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 191,
+    "kind": "variable",
+    "name": "client",
+    "memberof": "src/services/mailer.js",
+    "static": true,
+    "longname": "src/services/mailer.js~client",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/mailer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 192,
+    "kind": "variable",
+    "name": "SIGNUP_CONFIRM_TEMPLATE",
+    "memberof": "src/services/mailer.js",
+    "static": true,
+    "longname": "src/services/mailer.js~SIGNUP_CONFIRM_TEMPLATE",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/mailer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 193,
+    "kind": "variable",
+    "name": "PASSWORD_RECOVERY_TEMPLATE",
+    "memberof": "src/services/mailer.js",
+    "static": true,
+    "longname": "src/services/mailer.js~PASSWORD_RECOVERY_TEMPLATE",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/mailer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 194,
+    "kind": "function",
+    "name": "sendSingleEmail",
+    "memberof": "src/services/mailer.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/mailer.js~sendSingleEmail",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/mailer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "params": [
+      {
+        "name": "template",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "recipient",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "substitutions",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 195,
+    "kind": "function",
+    "name": "sendSignupConfirmationEmail",
+    "memberof": "src/services/mailer.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/mailer.js~sendSignupConfirmationEmail",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/mailer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "params": [
+      {
+        "name": "user",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 196,
+    "kind": "function",
+    "name": "sendPasswordRecoveryEmail",
+    "memberof": "src/services/mailer.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/services/mailer.js~sendPasswordRecoveryEmail",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/services/mailer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 41,
+    "undocument": true,
+    "params": [
+      {
+        "name": "user",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "token",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 197,
+    "kind": "file",
+    "name": "src/util/exceptions.js",
+    "content": "const HttpStatus = require('http-status-codes')\n\nclass AppException extends Error {\n  constructor (message, status = HttpStatus.INTERNAL_SERVER_ERROR) {\n    // Calling parent constructor of base Error class.\n    super(message)\n\n    // Saving class name in the property of our custom error as a shortcut.\n    this.name = this.constructor.name\n    this.status = status\n\n    // Capturing stack trace, excluding constructor call from it.\n    Error.captureStackTrace(this, this.constructor)\n  }\n}\n\nclass RecordAlreadyExistsException extends AppException {\n  constructor (message) {\n    super(message || 'Database record already exists', HttpStatus.CONFLICT)\n  }\n}\n\nclass RecordNotFoundException extends AppException {\n  constructor (message) {\n    super(message || 'Record not found', HttpStatus.NOT_FOUND)\n  }\n}\n\nclass RouteNotFoundException extends AppException {\n  constructor (message) {\n    super(message || 'Route not found', HttpStatus.NOT_FOUND)\n  }\n}\n\nclass RecordCreationException extends AppException {\n  constructor (message) {\n    super(message || 'Record could not be created', HttpStatus.INTERNAL_SERVER_ERROR)\n  }\n}\n\nclass AuthenticationException extends AppException {\n  constructor (message) {\n    super(message || 'Authentication Exception', HttpStatus.UNAUTHORIZED)\n  }\n}\n\nclass InvalidParametersException extends AppException {\n  constructor (message) {\n    super(message || 'Invalid Parameters Exception', HttpStatus.BAD_REQUEST)\n  }\n}\n\nclass InvalidTokenException extends AppException {\n  constructor (message) {\n    super(message || 'Invalid Token Exception', HttpStatus.BAD_REQUEST)\n  }\n}\n\nmodule.exports = {\n  AppException,\n  RecordAlreadyExistsException,\n  RecordNotFoundException,\n  RouteNotFoundException,\n  RecordCreationException,\n  AuthenticationException,\n  InvalidParametersException,\n  InvalidTokenException,\n}\n",
+    "static": true,
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/src/util/exceptions.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 198,
+    "kind": "variable",
+    "name": "HttpStatus",
+    "memberof": "src/util/exceptions.js",
+    "static": true,
+    "longname": "src/util/exceptions.js~HttpStatus",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/util/exceptions.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 199,
+    "kind": "class",
+    "name": "AppException",
+    "memberof": "src/util/exceptions.js",
+    "static": true,
+    "longname": "src/util/exceptions.js~AppException",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/util/exceptions.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "Error"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 200,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/util/exceptions.js~AppException",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/util/exceptions.js~AppException#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true
+  },
+  {
+    "__docId__": 201,
+    "kind": "member",
+    "name": "name",
+    "memberof": "src/util/exceptions.js~AppException",
+    "static": false,
+    "longname": "src/util/exceptions.js~AppException#name",
+    "access": "public",
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 202,
+    "kind": "member",
+    "name": "status",
+    "memberof": "src/util/exceptions.js~AppException",
+    "static": false,
+    "longname": "src/util/exceptions.js~AppException#status",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 203,
+    "kind": "class",
+    "name": "RecordAlreadyExistsException",
+    "memberof": "src/util/exceptions.js",
+    "static": true,
+    "longname": "src/util/exceptions.js~RecordAlreadyExistsException",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/util/exceptions.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "AppException"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 204,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/util/exceptions.js~RecordAlreadyExistsException",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/util/exceptions.js~RecordAlreadyExistsException#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true
+  },
+  {
+    "__docId__": 205,
+    "kind": "class",
+    "name": "RecordNotFoundException",
+    "memberof": "src/util/exceptions.js",
+    "static": true,
+    "longname": "src/util/exceptions.js~RecordNotFoundException",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/util/exceptions.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "AppException"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 206,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/util/exceptions.js~RecordNotFoundException",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/util/exceptions.js~RecordNotFoundException#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true
+  },
+  {
+    "__docId__": 207,
+    "kind": "class",
+    "name": "RouteNotFoundException",
+    "memberof": "src/util/exceptions.js",
+    "static": true,
+    "longname": "src/util/exceptions.js~RouteNotFoundException",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/util/exceptions.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "AppException"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 208,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/util/exceptions.js~RouteNotFoundException",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/util/exceptions.js~RouteNotFoundException#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 30,
+    "undocument": true
+  },
+  {
+    "__docId__": 209,
+    "kind": "class",
+    "name": "RecordCreationException",
+    "memberof": "src/util/exceptions.js",
+    "static": true,
+    "longname": "src/util/exceptions.js~RecordCreationException",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/util/exceptions.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "AppException"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 210,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/util/exceptions.js~RecordCreationException",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/util/exceptions.js~RecordCreationException#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true
+  },
+  {
+    "__docId__": 211,
+    "kind": "class",
+    "name": "AuthenticationException",
+    "memberof": "src/util/exceptions.js",
+    "static": true,
+    "longname": "src/util/exceptions.js~AuthenticationException",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/util/exceptions.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 41,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "AppException"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 212,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/util/exceptions.js~AuthenticationException",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/util/exceptions.js~AuthenticationException#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true
+  },
+  {
+    "__docId__": 213,
+    "kind": "class",
+    "name": "InvalidParametersException",
+    "memberof": "src/util/exceptions.js",
+    "static": true,
+    "longname": "src/util/exceptions.js~InvalidParametersException",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/util/exceptions.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 47,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "AppException"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 214,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/util/exceptions.js~InvalidParametersException",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/util/exceptions.js~InvalidParametersException#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true
+  },
+  {
+    "__docId__": 215,
+    "kind": "class",
+    "name": "InvalidTokenException",
+    "memberof": "src/util/exceptions.js",
+    "static": true,
+    "longname": "src/util/exceptions.js~InvalidTokenException",
+    "access": "public",
+    "export": false,
+    "importPath": "api-boilerplate/src/util/exceptions.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 53,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "AppException"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 216,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/util/exceptions.js~InvalidTokenException",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/util/exceptions.js~InvalidTokenException#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 54,
+    "undocument": true
+  },
+  {
+    "kind": "index",
+    "content": "\n[![Build Status](https://travis-ci.org/s1moe2/express-api-boilerplate.svg?branch=master)](https://travis-ci.org/s1moe2/express-api-boilerplate)\n[![codecov](https://codecov.io/gh/s1moe2/express-api-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/s1moe2/express-api-boilerplate)\n[![Known Vulnerabilities](https://snyk.io/test/github/s1moe2/express-api-boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/s1moe2/express-api-boilerplate?targetFile=package.json)\n[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)\n\n\n# Node.js+Express+Sequelize API server.js boilerplate\n\n## Getting Started\n(Note: For the database I used PostgreSQL but you can easily use any flavour accepted by Sequelize by changing the env variable `DB_DIALECT`.)\n\n1. Create a database and update the environment variables in the `.env` file (copy-paste `.env.example` and edit as needed).\n3. `npm i`\n2. `npm run migrate`\n\n\n## NPM Scrips\n```bash\n# Starts the server with nodemon\nnpm run dev\n\n# Drops and creates the database, runs migrations and starts the server with nodemon\nnpm run dev-hard\n\n# Runs migrations and then the tests in `./test`\nnpm test\n\n# Starts the app in production mode\nnpm start\n\n# Runs tests and generates coverage report\nnpm run coverage\n\n# Displays previously generated coverage report\nnpm run report\n```\n\n\n## Design Principles\n\nThis application has a multi-layer architecture composed of: routes, controllers, services and repositories.\n\n* **Routes**: The routes layer could be seen as API definition, containing only the enpoints, validation rules and the controller that handles the workload. No business logic or data access is done on any route.\n* **Controllers**: Controllers are responsible for request/response handling, performing validations and executing most of the business logic, preferably in a declarative style. This means that, although the controller is aware if the logic, it should use services/repositories/utils to actually do the work.\n* **Services**: Modular components that are responsible for something specific or generic such as mailing. One can also think of those as services that could be detatched from the server sometime in the future.\n* **Repositories**: Repositories are used to centralize data access logic and wrap the ORM, isolating it from the rest of the application.\n\n\n## Project structure\n```\n├── coverage  \t\t\t\t(coverage report results)\n├── src\t\t\t\t\t\t(source code)\n│   ├── bin\t\t\t\t\t(server startup scripts)\n│   ├── config\t\t\t\t(configurations)\n│   ├── controllers\t\t\t(handlers/business-logic)\n│   ├── data\t\t\t\t(data/database related pieces)\n│   │   ├── domain-model\t(orm: sequelize models)\n│   │   ├── migrations\t\t(database migration files)\n│   │   └── repositories\t(data access layer)\n│   ├── middleware\t\t\t(custom express middlewares)\n│   ├── routes\t\t\t\t(all routing)\n│   │   └── v1\t\t\t\t(API v1 routes)\n│   ├── services\t\t\t(custom service modules)\n│   └── util\t\t\t\t(utility classes/functions/modules)\n└── test\t\t\t\t\t(all tests)\n    └── v1\t\t\t\t\t(integration tests for API v1)\n```\n",
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"api-boilerplate\",\n  \"description\": \"Simple Node.js+Express+Sequelize API server.js boilerplate\",\n  \"version\": \"1.0.0\",\n  \"author\": \"Diogo Simões\",\n  \"scripts\": {\n    \"doc\": \"esdoc\",\n    \"lint\": \"eslint src/ --ext .js\",\n    \"dev\": \"NODE_ENV=development nodemon ./src/bin/server.js\",\n    \"dev-hard\": \"NODE_ENV=development sequelize db:drop && sequelize db:create && sequelize db:migrate && DEBUG=* nodemon ./src/bin/server.js\",\n    \"pretest\": \"NODE_ENV=test sequelize db:migrate\",\n    \"test\": \"NODE_ENV=test nyc --reporter=text --reporter=html mocha --exit\",\n    \"start\": \"NODE_ENV=production node ./src/bin/server.js\",\n    \"report\": \"NODE_ENV=test nyc report\",\n    \"coverage\": \"NODE_ENV=test nyc --reporter=text-lcov > coverage.lcov mocha -r chai/register-should --recursive --exit\",\n    \"migrate\": \"sequelize db:migrate\"\n  },\n  \"dependencies\": {\n    \"app-root-path\": \"^2.1.0\",\n    \"bcrypt\": \"3.0.2\",\n    \"bcrypt-promise\": \"2.0.0\",\n    \"compression\": \"^1.7.3\",\n    \"cors\": \"^2.8.5\",\n    \"debug\": \"^4.1.1\",\n    \"express\": \"^4.16.4\",\n    \"express-async-errors\": \"^3.1.1\",\n    \"express-validator\": \"^5.3.0\",\n    \"helmet\": \"^3.15.0\",\n    \"http-status-codes\": \"^1.3.0\",\n    \"jsonwebtoken\": \"^8.4.0\",\n    \"morgan\": \"^1.9.1\",\n    \"passport\": \"^0.4.0\",\n    \"passport-jwt\": \"^4.0.0\",\n    \"pg\": \"^7.7.1\",\n    \"sequelize\": \"^4.42.0\",\n    \"sparkpost\": \"^2.1.3\"\n  },\n  \"devDependencies\": {\n    \"chai\": \"^4.2.0\",\n    \"chai-as-promised\": \"^7.1.1\",\n    \"chai-http\": \"^4.2.0\",\n    \"codecov\": \"^3.1.0\",\n    \"coveralls\": \"^3.0.2\",\n    \"dotenv\": \"^6.2.0\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"~5.9.0\",\n    \"eslint-config-standard\": \"~12.0.0\",\n    \"eslint-plugin-import\": \"~2.14.0\",\n    \"eslint-plugin-node\": \"~8.0.0\",\n    \"eslint-plugin-promise\": \"~4.0.1\",\n    \"eslint-plugin-standard\": \"~4.0.0\",\n    \"mocha\": \"^5.2.0\",\n    \"nodemon\": \"^1.18.9\",\n    \"nyc\": \"^13.1.0\",\n    \"sequelize-cli\": \"^5.4.0\",\n    \"sinon\": \"^7.1.1\"\n  },\n  \"engines\": {\n    \"node\": \">= 10\"\n  }\n}\n",
+    "longname": "/Users/cloudoki/dev/opensource/express-api-boilerplate/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]
