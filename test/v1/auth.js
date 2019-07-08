@@ -1,4 +1,5 @@
 const chai = require('chai')
+const { describe, before, it } = require('mocha')
 const chaiHttp = require('chai-http')
 const expect = chai.expect
 
@@ -9,7 +10,6 @@ chai.use(chaiHttp)
 
 
 describe('Authentication endpoint tests', () => {
-
   before(function (done) {
     orm.sequelize.sync({ force: true }).then(() => { done() })
   })
@@ -20,8 +20,8 @@ describe('Authentication endpoint tests', () => {
       .post('/v1/auth/signup')
       .send({
         email: 'rick@sanchez.xx',
-        password: 'morty',
-        confirmPassword: 'morty',
+        password: 'mortyisthebest',
+        confirmPassword: 'mortyisthebest',
         firstName: 'Rick',
         lastName: 'Sanchez',
       })
@@ -38,8 +38,8 @@ describe('Authentication endpoint tests', () => {
       .post('/v1/auth/signup')
       .send({
         email: 'rick@sanchez.xx',
-        password: 'morty',
-        confirmPassword: 'morty',
+        password: 'mortyisthebest',
+        confirmPassword: 'mortyisthebest',
         firstName: 'Rick',
         lastName: 'Sanchez',
       })

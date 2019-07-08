@@ -6,17 +6,17 @@ const Exceptions = requireRoot('/src/util/exceptions')
 const { auth } = requireRoot('/src/services')
 const { users } = requireRoot('/src/data/repositories')
 
-const validateRequest = (req, res) => {
+const validateRequest = (req) => {
   const errors = validationResult(req)
   if (!errors.isEmpty()) {
-    return res.apiError(new Exceptions.InvalidParametersException({ errors: errors.array() }))
+    throw new Exceptions.InvalidParametersException({ errors: errors.array() })
   }
 }
 
 const signin = async (req, res, next) => {
-  validateRequest(req, res)
-
   try {
+    validateRequest(req)
+
     const user = await auth.authenticate(req.body.email, req.body.password)
 
     // if user is found and password is right create a token
@@ -30,9 +30,9 @@ const signin = async (req, res, next) => {
 }
 
 const signup = async (req, res, next) => {
-  validateRequest(req, res)
-
   try {
+    validateRequest(req)
+
     const user = await users.createUser({
       email: req.body.email,
       firstName: req.body.firstName,
@@ -48,7 +48,7 @@ const signup = async (req, res, next) => {
 }
 
 const confirmSignup = async (req, res, next) => {
-  validateRequest(req, res)
+  validateRequest(req)
 
   const confirmed = await auth.confirmUserSignup(req.query.token)
 
@@ -60,7 +60,7 @@ const confirmSignup = async (req, res, next) => {
 }
 
 const recover = async (req, res, next) => {
-  validateRequest(req, res)
+  validateRequest(req)
 
   try {
     const user = await users.findByEmail(req.body.email)
@@ -76,7 +76,7 @@ const recover = async (req, res, next) => {
 }
 
 const resetPassword = async (req, res, next) => {
-  validateRequest(req, res)
+  validateRequest(req)
 
   try {
     const user = await auth.checkRecoveryToken(req.body.token)
